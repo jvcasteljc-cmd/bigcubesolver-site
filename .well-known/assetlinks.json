@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.jvcasteljc.bigcubesolver",
+    "sha256_cert_fingerprints": [
+      "72:AC:F8:3E:8F:EA:24:AA:CA:05:40:9A:14:B6:E2:AE:AB:F7:8C:39:8B:C7:F8:38:C8:FA:A5:64:97:6C:A1:A0",
+      "DB:85:96:AC:03:20:D1:E8:9E:32:47:82:73:6C:F9:66:09:63:5B:72:BC:34:E2:85:4C:A3:5C:C4:54:D7:9F:40"
+    ]
+  }
+}]

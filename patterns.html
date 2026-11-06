@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15181f">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/site.css">
+<title>Patterns - Big Cube Solver</title>
+<meta name="description" content="Patterns for every cube from 2×2 to 15×15. Tap one on your phone to add it to Big Cube Solver.">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32">Big Cube Solver</a>
+    <nav><a href="/">Home</a><a href="/patterns" aria-current="page">Patterns</a><a href="/privacy">Privacy</a></nav>
+  </div>
+  <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Patterns</h2>
+      <p class="sub">Tap a pattern on your Android phone to open it in Big Cube Solver - it lands in <b>My patterns</b>, ready to form on the cube. Made one yourself? In the app, long-press it in My patterns and choose Share.</p>
+      <div class="chips" id="sizes" role="group" aria-label="Cube size"></div>
+      <div class="grid" id="grid"></div>
+      <p class="note" id="status"></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Big Cube Solver</span>
+    <a href="/privacy">Privacy</a>
+    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+  </div>
+</footer>
+<script src="/js/cube.js"></script>
+<script src="/js/draw.js"></script>
+<script>
+(function () {
+  var sizesEl = document.getElementById('sizes'), grid = document.getElementById('grid'), status = document.getElementById('status');
+  var all = [], current = 0;
+  function show(n) {
+    current = n;
+    try { history.replaceState(null, '', '/patterns?size=' + n); } catch (e) {}
+    Array.prototype.forEach.call(sizesEl.children, function (b) { b.setAttribute('aria-pressed', String(+b.dataset.n === n)); });
+    var list = all.filter(function (p) { return p.n === n; });
+    grid.innerHTML = '';
+    list.forEach(function (p) {
+      var a = document.createElement('a');
+      a.className = 'pcard';
+      a.href = BcsDraw.link(p.n, p.name, p.m);
+      var pic;
+      try { pic = BcsDraw.svg(p.n, BcsCube.apply(p.n, p.m)); } catch (e) { pic = ''; }
+      a.innerHTML = pic + '<span>' + BcsDraw.esc(p.name) + '</span><small>' + p.n + '×' + p.n + '</small>';
+      grid.appendChild(a);
+    });
+    status.textContent = list.length === 1 ? '1 pattern' : list.length + ' patterns';
+  }
+  fetch('/patterns.json').then(function (r) { return r.json(); }).then(function (data) {
+    all = data.patterns;
+    var sizes = [];
+    all.forEach(function (p) { if (sizes.indexOf(p.n) < 0) sizes.push(p.n); });
+    sizes.sort(function (a, b) { return a - b; });
+    sizes.forEach(function (n) {
+      var b = document.createElement('button');
+      b.className = 'chip'; b.type = 'button'; b.dataset.n = n; b.textContent = n + '×' + n;
+      b.onclick = function () { show(n); };
+      sizesEl.appendChild(b);
+    });
+    var want = +(new URLSearchParams(location.search).get('size'));
+    show(sizes.indexOf(want) >= 0 ? want : sizes[0]);
+  }).catch(function () { status.textContent = 'The patterns could not be loaded.'; });
+})();
+</script>
+</body>
+</html>

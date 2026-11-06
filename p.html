@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15181f">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/site.css">
+<title>A pattern for Big Cube Solver</title>
+<meta name="description" content="A cube pattern shared from Big Cube Solver. Open it in the app to form it on your cube.">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32">Big Cube Solver</a>
+    <nav><a href="/">Home</a><a href="/patterns">Patterns</a><a href="/privacy">Privacy</a></nav>
+  </div>
+  <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+<main class="wrap">
+  <div class="pattern" id="pattern" hidden>
+    <div class="views">
+      <figure id="front"></figure>
+      <figure id="back"></figure>
+    </div>
+    <div>
+      <h1 id="name"></h1>
+      <p class="meta" id="meta"></p>
+      <div class="actions">
+        <a class="btn primary" id="open" href="#">Open in Big Cube Solver</a>
+        <button class="btn ghost" id="copy" type="button">Copy link</button>
+      </div>
+      <p class="note">Opening it adds the pattern to <b>My patterns</b> in the app, on an Android phone with Big Cube Solver installed. The app is coming soon to Google Play.</p>
+      <details>
+        <summary id="count"></summary>
+        <p class="moves" id="moves"></p>
+      </details>
+    </div>
+  </div>
+  <div class="error" id="error" hidden>
+    <b>This is not a pattern link.</b>
+    <p id="why"></p>
+    <p><a href="/patterns">Browse the patterns</a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Big Cube Solver</span>
+    <a href="/privacy">Privacy</a>
+    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+  </div>
+</footer>
+<script src="/js/cube.js"></script>
+<script src="/js/draw.js"></script>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var n = parseInt(q.get('n'), 10), name = (q.get('name') || 'Pattern').replace(/[\t\r\n]+/g, ' ').trim().slice(0, 60);
+  var m = (q.get('m') || '').trim().replace(/\s+/g, ' ');
+  function fail(why) { document.getElementById('error').hidden = false; document.getElementById('why').textContent = why; }
+  if (!(n >= 2 && n <= 15)) return fail('The size is missing or not between 2×2 and 15×15.');
+  if (!m || m.length > 40000) return fail('The moves are missing.');
+  var front, back;
+  try { front = BcsCube.apply(n, m); back = BcsCube.apply(n, m + " x2 y'"); }
+  catch (e) { return fail(e.message); }
+  document.title = name + ' - a ' + n + '×' + n + ' pattern - Big Cube Solver';
+  document.getElementById('name').textContent = name;
+  document.getElementById('meta').textContent = 'A ' + n + '×' + n + ' pattern, made from a solved cube held white up, green in front.';
+  document.getElementById('front').innerHTML = BcsDraw.svg(n, front, { label: name + ', front' }) + '<figcaption>Front</figcaption>';
+  document.getElementById('back').innerHTML = BcsDraw.svg(n, back, { label: name + ', back' }) + '<figcaption>Back (turned over)</figcaption>';
+  var tokens = m.split(' ').length;
+  document.getElementById('count').textContent = 'The moves (' + tokens + ')';
+  document.getElementById('moves').textContent = m;
+  var query = 'n=' + n + '&name=' + encodeURIComponent(name) + '&m=' + encodeURIComponent(m);
+  var open = document.getElementById('open');
+  if (/Android/i.test(navigator.userAgent)) {
+    // Chrome on Android: the app if installed, else Google Play
+    var play = 'https://play.google.com/store/apps/details?id=io.github.jvcasteljc.bigcubesolver';
+    open.href = 'intent://p?' + query + '#Intent;scheme=bigcubesolver;package=io.github.jvcasteljc.bigcubesolver;S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
+  } else open.href = 'bigcubesolver://p?' + query;
+  document.getElementById('copy').onclick = function () {
+    var url = location.origin + '/p?' + query, btn = this;
+    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
+      btn.textContent = 'Link copied';
+    }, function () { prompt('Copy this link:', url); });
+  };
+  document.getElementById('pattern').hidden = false;
+})();
+</script>
+</body>
+</html>
