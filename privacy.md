@@ -4,7 +4,7 @@
 
 *Effective date: 6 November 2026*
 
-Big Cube Solver ("the app") is developed by Jorge Castellanos. This policy
+Big Cube Solver ("the app") is developed by Big Cube Solver. This policy
 explains what the app does with your information. The short answer: **the app
 does not collect, store on any server, or share any personal data.**
 
@@ -89,7 +89,7 @@ Questions about this policy: privacy@bigcubesolver.com
 
 *Fecha de entrada en vigor: 6 de noviembre de 2026*
 
-Big Cube Solver ("la app") ha sido desarrollada por Jorge Castellanos. Esta
+Big Cube Solver ("la app") ha sido desarrollada por Big Cube Solver. Esta
 política explica qué hace la app con tu información. En resumen: **la app no
 recopila datos personales, no los guarda en ningún servidor y no los comparte.**
 
