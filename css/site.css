@@ -109,3 +109,13 @@ details summary { cursor: pointer; color: var(--muted); }
 footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 40px; color: var(--faint); font-size: 14px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 footer a { color: var(--muted); }
+
+/* phones: the header on one line */
+.brand { white-space: nowrap; }
+@media (max-width: 460px) {
+  .top .wrap { gap: 8px; }
+  .brand { font-size: 15px; gap: 8px; }
+  .top nav { flex-wrap: nowrap; gap: 0; }
+  .top nav a { padding: 6px 7px; font-size: 14px; }
+}
+@media (max-width: 370px) { .brand span { display: none; } }

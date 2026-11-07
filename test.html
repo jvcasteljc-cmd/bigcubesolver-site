@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15181f">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/site.css">
+<title>Be a tester - Big Cube Solver</title>
+<meta name="description" content="Test Big Cube Solver before it reaches Google Play: three steps on your Android phone.">
+<style>
+  .steps { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 14px; counter-reset: s; }
+  .steps li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 18px 66px; position: relative; counter-increment: s; }
+  .steps li::before { content: counter(s); position: absolute; left: 16px; top: 16px; width: 36px; height: 36px; border-radius: 10px;
+    background: var(--accent); color: #15181f; font-weight: 800; display: grid; place-items: center; font-size: 19px; }
+  .steps h3 { margin: 0 0 6px; font-size: 19px; }
+  .steps p { margin: 0 0 12px; color: var(--muted); }
+  .steps .btn { margin-top: 2px; }
+  .ask { background: #2a2a1a; border: 1px solid #5c5320; border-radius: var(--radius); padding: 16px 18px; margin: 0 0 24px; }
+  .ask b { color: var(--accent); }
+  .faq h3 { font-size: 17px; margin: 18px 0 4px; }
+  .faq p { margin: 0; color: var(--muted); }
+  [data-lang] { display: none; }
+  html[lang="es"] [data-lang="es"], html[lang="en"] [data-lang="en"] { display: revert; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
+    <nav><a href="/">Home</a><a href="/patterns">Patterns</a><a href="/privacy">Privacy</a></nav>
+  </div>
+  <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+<main class="wrap">
+  <div class="prose" style="max-width:720px">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button class="chip" type="button" data-set="es">Español</button>
+      <button class="chip" type="button" data-set="en">English</button>
+    </div>
+
+    <h1 data-lang="es">Prueba Big Cube Solver antes que nadie</h1>
+    <h1 data-lang="en">Test Big Cube Solver before anyone else</h1>
+    <p data-lang="es">La app resuelve cualquier cubo de 2×2 a 15×15. Antes de publicarla en Google Play necesitamos probadores. Son tres pasos en tu teléfono Android (5.0 o más reciente), con la <b>misma cuenta de Google</b> que usas en Play Store.</p>
+    <p data-lang="en">The app solves any cube from 2×2 to 15×15. Before it goes on Google Play it needs testers. Three steps on your Android phone (5.0 or newer), with the <b>same Google account</b> you use in the Play Store.</p>
+
+    <ol class="steps">
+      <li>
+        <h3 data-lang="es">Únete al grupo de probadores</h3><h3 data-lang="en">Join the testers' group</h3>
+        <p data-lang="es">Abre el grupo y pulsa <b>Unirse al grupo</b>. Nadie más verá tu correo.</p>
+        <p data-lang="en">Open the group and tap <b>Join group</b>. Nobody else sees your email.</p>
+        <a class="btn primary" href="https://groups.google.com/g/bigcubesolver-testers" target="_blank" rel="noopener"><span data-lang="es">Abrir el grupo</span><span data-lang="en">Open the group</span></a>
+      </li>
+      <li>
+        <h3 data-lang="es">Hazte probador</h3><h3 data-lang="en">Become a tester</h3>
+        <p data-lang="es">Acepta unirte a la prueba con el botón de la página de Google Play ("Become a tester" si aparece en inglés). Si dice que no está disponible, espera unos minutos tras el paso 1 y vuelve a intentarlo.</p>
+        <p data-lang="en">Tap <b>Become a tester</b>. If it says it is not available, wait a few minutes after step 1 and try again.</p>
+        <a class="btn primary" href="https://play.google.com/apps/testing/io.github.jvcasteljc.bigcubesolver" target="_blank" rel="noopener"><span data-lang="es">Hacerme probador</span><span data-lang="en">Become a tester</span></a>
+      </li>
+      <li>
+        <h3 data-lang="es">Instala la app</h3><h3 data-lang="en">Install the app</h3>
+        <p data-lang="es">Desde Google Play, como cualquier app. Las actualizaciones llegan solas.</p>
+        <p data-lang="en">From Google Play, like any app. Updates arrive by themselves.</p>
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.jvcasteljc.bigcubesolver" target="_blank" rel="noopener"><span data-lang="es">Abrir en Google Play</span><span data-lang="en">Open in Google Play</span></a>
+      </li>
+    </ol>
+
+    <div class="ask">
+      <p data-lang="es"><b>Un favor importante:</b> mantén la app instalada al menos <b>14 días</b> y ábrela de vez en cuando. Google exige 12 probadores durante 14 días seguidos antes de permitir la publicación.</p>
+      <p data-lang="en"><b>One important favour:</b> keep the app installed for at least <b>14 days</b> and open it now and then. Google requires 12 testers for 14 days in a row before it allows publishing.</p>
+    </div>
+
+    <h2 data-lang="es">Cuéntanos qué tal</h2><h2 data-lang="en">Tell us how it went</h2>
+    <p data-lang="es">Todo sirve: lo que te gustó, lo que falló, lo que no entendiste. Toma dos minutos.</p>
+    <p data-lang="en">Everything helps: what you liked, what failed, what was unclear. It takes two minutes.</p>
+    <p><a class="btn ghost" href="/feedback"><span data-lang="es">Formulario de opinión</span><span data-lang="en">Feedback form</span></a>
+       <a class="btn ghost" href="/test-guide"><span data-lang="es">Qué probar</span><span data-lang="en">What to try</span></a></p>
+
+    <div class="faq">
+      <h2 data-lang="es">Problemas frecuentes</h2><h2 data-lang="en">Common snags</h2>
+      <h3 data-lang="es">"Esta app no está disponible"</h3><h3 data-lang="en">"This app is not available"</h3>
+      <p data-lang="es">Tu teléfono usa otra cuenta de Google que la que se unió al grupo. En Play Store toca tu foto, cambia a esa cuenta y repite el paso 3.</p>
+      <p data-lang="en">The phone uses a different Google account than the one that joined the group. In the Play Store tap your picture, switch to that account and repeat step 3.</p>
+      <h3 data-lang="es">Tengo iPhone</h3><h3 data-lang="en">I have an iPhone</h3>
+      <p data-lang="es">Por ahora la app es solo para Android.</p>
+      <p data-lang="en">For now the app is Android only.</p>
+      <h3 data-lang="es">¿Es gratis? ¿Pide datos?</h3><h3 data-lang="en">Is it free? Does it collect data?</h3>
+      <p data-lang="es">La versión de prueba es gratis. La app no tiene anuncios ni cuentas y no envía nada por internet: <a href="/privacy">política de privacidad</a>.</p>
+      <p data-lang="en">The test version is free. The app has no ads or accounts and sends nothing over the internet: <a href="/privacy">privacy policy</a>.</p>
+      <h3 data-lang="es">Contacto</h3><h3 data-lang="en">Contact</h3>
+      <p><a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a></p>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Big Cube Solver</span>
+    <a href="/privacy">Privacy</a>
+    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+  </div>
+</footer>
+<script>
+(function () {
+  var html = document.documentElement, want = null;
+  try { want = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang'); } catch (e) {}
+  function set(l) {
+    html.lang = l;
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === l)); });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('[data-set]').forEach(function (b) { b.onclick = function () { set(b.dataset.set); }; });
+  set(want === 'en' || want === 'es' ? want : (/^es/i.test(navigator.language || '') ? 'es' : 'en'));
+})();
+</script>
+</body>
+</html>

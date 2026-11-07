@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Tester cards</title>
+<style>
+  @page { size: A4; margin: 8mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sheet { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 68mm; gap: 2mm; width: 194mm; }
+  .card { background: #15181f; color: #edeff4; border-radius: 4mm; padding: 4mm 4mm 0; display: grid;
+    grid-template-columns: 1fr 34mm; gap: 3mm; position: relative; overflow: hidden; }
+  .card .logo { width: 34mm; margin: 0 0 1.5mm; }
+  .card h2 { margin: 0 0 1mm; font-size: 12pt; line-height: 1.15; color: #ffd400; }
+  .card p { margin: 0 0 1mm; font-size: 8pt; line-height: 1.3; color: #c9cfdb; }
+  .card .en { color: #8d96a8; }
+  .qr { background: #fff; border-radius: 2.5mm; padding: 2mm; align-self: start; margin-top: 1mm; }
+  .qr img { width: 100%; display: block; }
+  .url { grid-column: 2; text-align: center; font-size: 7.4pt; font-weight: 700; color: #edeff4; margin-top: -1mm; }
+  .stripe { position: absolute; left: 0; right: 0; bottom: 0; height: 2.2mm; display: flex; }
+  .stripe i { flex: 1; }
+</style></head><body>
+<div class="sheet" id="sheet"></div>
+<script>
+var card = '<div class="card"><div>' +
+  '<img class="logo" src="logo.webp" alt="Big Cube Solver">' +
+  '<h2>¡Prueba la app antes que nadie!</h2>' +
+  '<p>Resuelve cualquier cubo de 2×2 a 15×15 con la cámara. Escanea el código, únete y instálala en tu Android.</p>' +
+  '<p class="en">Test the app first: any cube from 2×2 to 15×15. Scan, join, install on Android.</p>' +
+  '</div><div><div class="qr"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOSAyOSIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMCAwaDI5djI5SDB6Ii8+PHBhdGggc3Ryb2tlPSIjMDAwMDAwIiBkPSJNMCAwLjVoN20yIDBoMW0xIDBoOG0zIDBoN00wIDEuNWgxbTUgMGgxbTEgMGgxbTEgMGgxbTIgMGgxbTIgMGgybTEgMGgybTEgMGgxbTUgMGgxTTAgMi41aDFtMSAwaDNtMSAwaDFtMyAwaDNtMSAwaDJtMyAwaDJtMSAwaDFtMSAwaDNtMSAwaDFNMCAzLjVoMW0xIDBoM20xIDBoMW0xIDBoMW0yIDBoMm0yIDBoM20yIDBoMW0xIDBoMW0xIDBoM20xIDBoMU0wIDQuNWgxbTEgMGgzbTEgMGgxbTEgMGgxbTEgMGgybTIgMGgxbTEgMGg0bTIgMGgxbTEgMGgzbTEgMGgxTTAgNS41aDFtNSAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMiAwaDFtMSAwaDFtNSAwaDFNMCA2LjVoN20xIDBoMW0xIDBoMW0xIDBoMW0xIDBoMW0xIDBoMW0xIDBoMW0xIDBoMW0xIDBoN004IDcuNWgybTEgMGgxbTIgMGgxbTEgMGgxbTIgMGgyTTEgOC41aDFtMSAwaDRtMSAwaDEwbTIgMGgzbTEgMGgybTEgMGgxTTAgOS41aDFtMSAwaDFtMSAwaDJtMSAwaDJtMSAwaDFtMyAwaDFtMSAwaDFtMiAwaDFtMyAwaDNtMSAwaDFNNSAxMC41aDRtMSAwaDJtMyAwaDFtMiAwaDFtMiAwaDNtMiAwaDFNMSAxMS41aDRtMiAwaDNtMiAwaDRtMSAwaDFtMSAwaDJtNCAwaDFtMiAwaDFNMiAxMi41aDNtMSAwaDVtMiAwaDFtMiAwaDFtMyAwaDNtNCAwaDFNMSAxMy41aDFtMiAwaDJtMiAwaDFtMSAwaDJtMSAwaDJtNyAwaDFtMSAwaDFtMSAwaDFtMSAwaDFNMSAxNC41aDNtMiAwaDFtMyAwaDFtMSAwaDhtMSAwaDNtMSAwaDFtMiAwaDFNMSAxNS41aDJtMSAwaDFtMiAwaDNtMSAwaDRtMSAwaDFtMiAwaDNtMiAwaDRNMSAxNi41aDFtMSAwaDJtMSAwaDJtMiAwaDFtMSAwaDFtMiAwaDJtMyAwaDFtMiAwaDFtMSAwaDFtMiAwaDFNMCAxNy41aDJtMyAwaDFtMiAwaDJtMSAwaDFtMiAwaDFtMSAwaDJtMSAwaDFtMyAwaDNNMCAxOC41aDJtMiAwaDZtMiAwaDRtMSAwaDFtMSAwaDFtMyAwaDFtMSAwaDFtMiAwaDFNMCAxOS41aDNtMiAwaDFtMSAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtNCAwaDFtMSAwaDJtMSAwaDFtMSAwaDFtMSAwaDFNMCAyMC41aDNtMSAwaDNtMSAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMiAwaDdNOCAyMS41aDJtMiAwaDFtMiAwaDFtMiAwaDFtMSAwaDFtMyAwaDNNMCAyMi41aDdtNCAwaDNtMSAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMSAwaDFNMCAyMy41aDFtNSAwaDFtMSAwaDJtMSAwaDFtNSAwaDRtMyAwaDJtMSAwaDFNMCAyNC41aDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtMSAwaDEwbTIgMGgyTTAgMjUuNWgxbTEgMGgzbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgyTTAgMjYuNWgxbTEgMGgzbTEgMGgxbTMgMGgzbTEgMGgxbTEgMGgzbTEgMGgybTEgMGgybTIgMGgyTTAgMjcuNWgxbTUgMGgxbTEgMGgxbTMgMGgxbTEgMGgybTIgMGgxbTIgMGgxbTIgMGgzbTEgMGgxTTAgMjguNWg3bTIgMGgxbTIgMGgzbTQgMGgybTEgMGg0Ii8+PC9zdmc+Cg==" alt=""></div><div class="url">bigcubesolver.com/test</div></div>' +
+  '<div class="stripe"><i style="background:#f9f7f0"></i><i style="background:#d6182b"></i><i style="background:#0db251"></i><i style="background:#ffd400"></i><i style="background:#f97c0c"></i><i style="background:#0d59d9"></i></div></div>';
+document.getElementById('sheet').innerHTML = card.repeat(8);
+</script>
+</body></html>

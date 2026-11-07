@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15181f">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/site.css">
+<title>What to try - Big Cube Solver</title>
+<meta name="description" content="What to try in the Big Cube Solver test version, and how to report a problem.">
+<style>
+  .steps { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 14px; counter-reset: s; }
+  .steps li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 18px 66px; position: relative; counter-increment: s; }
+  .steps li::before { content: counter(s); position: absolute; left: 16px; top: 16px; width: 36px; height: 36px; border-radius: 10px;
+    background: var(--accent); color: #15181f; font-weight: 800; display: grid; place-items: center; font-size: 19px; }
+  .steps h3 { margin: 0 0 6px; font-size: 19px; }
+  .steps p { margin: 0 0 12px; color: var(--muted); }
+  .steps .btn { margin-top: 2px; }
+  .ask { background: #2a2a1a; border: 1px solid #5c5320; border-radius: var(--radius); padding: 16px 18px; margin: 0 0 24px; }
+  .ask b { color: var(--accent); }
+  .faq h3 { font-size: 17px; margin: 18px 0 4px; }
+  .faq p { margin: 0; color: var(--muted); }
+  [data-lang] { display: none; }
+  html[lang="es"] [data-lang="es"], html[lang="en"] [data-lang="en"] { display: revert; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
+    <nav><a href="/">Home</a><a href="/patterns">Patterns</a><a href="/privacy">Privacy</a></nav>
+  </div>
+  <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+<main class="wrap">
+  <div class="prose" style="max-width:720px">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button class="chip" type="button" data-set="es">Español</button>
+      <button class="chip" type="button" data-set="en">English</button>
+    </div>
+    <h1 data-lang="es">Qué probar</h1><h1 data-lang="en">What to try</h1>
+    <p data-lang="es">No hace falta probarlo todo. Lo que más ayuda: usar la app como la usarías de verdad y contarnos qué pasó.</p>
+    <p data-lang="en">No need to try everything. What helps most: use the app as you really would, and tell us what happened.</p>
+    <ol class="steps">
+      <li><h3 data-lang="es">Resuelve un cubo en pantalla</h3><h3 data-lang="en">Solve a cube on screen</h3><p data-lang="es">Elige un tamaño (el botón de tamaño), pulsa el dado para mezclar y la varita para resolver. Prueba uno grande: 10×10 o 15×15. En la prueba todos los tamaños están abiertos.</p><p data-lang="en">Pick a size (the size button), tap the dice to scramble and the wand to solve. Try a big one: 10×10 or 15×15. In the test every size is unlocked.</p></li>
+      <li><h3 data-lang="es">Escanea tu cubo real</h3><h3 data-lang="en">Scan your real cube</h3><p data-lang="es">Pulsa la cámara y enseña cada cara. Funciona mejor con buena luz y sin reflejos. Cuéntanos tu tamaño de cubo y si leyó bien los colores.</p><p data-lang="en">Tap the camera and show each face. Works best in good light without glare. Tell us your cube size and whether it read the colours right.</p></li>
+      <li><h3 data-lang="es">Sigue la solución con el cubo en la mano</h3><h3 data-lang="en">Follow the solution with the cube in your hands</h3><p data-lang="es">Avanza movimiento a movimiento, cambia la velocidad, vuelve atrás. ¿Se entiende cada giro? ¿Terminaste con el cubo resuelto?</p><p data-lang="en">Step move by move, change the speed, go back. Is every turn clear? Did your cube end up solved?</p></li>
+      <li><h3 data-lang="es">Patrones</h3><h3 data-lang="en">Patterns</h3><p data-lang="es">Menú → Patrones: forma uno en tu cubo. En Mis patrones guarda el cubo de la pantalla y compártelo como enlace con otro probador.</p><p data-lang="en">Menu → Patterns: form one on your cube. In My patterns save the cube on screen and share it as a link with another tester.</p></li>
+      <li><h3 data-lang="es">Si tienes uno: cubo de imágenes o cubo inteligente</h3><h3 data-lang="en">If you have one: a picture cube or a smart cube</h3><p data-lang="es">Cubo de imágenes: fotografíalo resuelto y luego mezclado. Cubo inteligente Bluetooth: conéctalo y sigue una solución guiada.</p><p data-lang="en">Picture cube: photograph it solved, then scrambled. Bluetooth smart cube: connect it and follow a guided solution.</p></li>
+      <li><h3 data-lang="es">Resuélvelo tú en pantalla</h3><h3 data-lang="en">Solve it yourself on screen</h3><p data-lang="es">Gira el cubo de la pantalla con el dedo hasta resolverlo... y mira qué pasa.</p><p data-lang="en">Turn the cube on screen with your finger until it is solved... and see what happens.</p></li>
+    </ol>
+    <h2 data-lang="es">Si algo falla</h2><h2 data-lang="en">If something goes wrong</h2>
+    <ul>
+      <li data-lang="es">Haz una captura de pantalla (encendido + bajar volumen).</li><li data-lang="en">Take a screenshot (power + volume down).</li>
+      <li data-lang="es">Si la app se cierra sola, al abrirla de nuevo muestra un informe: compártelo.</li><li data-lang="en">If the app closes by itself, it shows a report the next time it opens: share it.</li>
+      <li data-lang="es">Cuéntanos tu modelo de teléfono, qué hiciste y qué esperabas.</li><li data-lang="en">Tell us your phone model, what you did and what you expected.</li>
+    </ul>
+    <p><a class="btn primary" href="/feedback"><span data-lang="es">Formulario de opinión</span><span data-lang="en">Feedback form</span></a>
+       <a class="btn ghost" href="/test"><span data-lang="es">Cómo hacerse probador</span><span data-lang="en">How to become a tester</span></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Big Cube Solver</span>
+    <a href="/privacy">Privacy</a>
+    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+  </div>
+</footer>
+<script>
+(function () {
+  var html = document.documentElement, want = null;
+  try { want = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang'); } catch (e) {}
+  function set(l) {
+    html.lang = l;
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === l)); });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('[data-set]').forEach(function (b) { b.onclick = function () { set(b.dataset.set); }; });
+  set(want === 'en' || want === 'es' ? want : (/^es/i.test(navigator.language || '') ? 'es' : 'en'));
+})();
+</script>
+</body>
+</html>
