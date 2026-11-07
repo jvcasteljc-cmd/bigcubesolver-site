@@ -4,7 +4,7 @@
 
 *Effective date: 6 November 2026*
 
-Big Cube Solver ("the app") is developed by Big Cube Solver. This policy
+Big Cube Solver ("the app") is developed by the Big Cube Solver team. This policy
 explains what the app does with your information. The short answer: **the app
 does not collect, store on any server, or share any personal data.**
 
