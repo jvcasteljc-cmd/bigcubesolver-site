@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{HEAD}}
+<title t="p.title"></title>
+<meta name="description" content="A cube pattern shared from Big Cube Solver. Open it in the app to form it on your cube.">
+<meta name="robots" content="noindex">
+</head>
+<body>
+{{HEADER:}}
+<main class="wrap">
+  <div class="hero slim"><img class="logo" src="/img/logo.webp" alt="Big Cube Solver" width="720" height="481"></div>
+
+  <div class="pattern" id="pattern" hidden>
+    <div class="views">
+      <figure id="front"></figure>
+      <figure id="back"></figure>
+    </div>
+    <div>
+      <h1 id="name"></h1>
+      <p class="meta" id="meta"></p>
+      <div class="actions">
+        <a class="btn primary" id="open" href="#"><span t="p.open"></span></a>
+        <button class="btn ghost" id="copy" type="button"><span t="p.copy"></span></button>
+      </div>
+      <p class="note" t="p.note"></p>
+      <details>
+        <summary id="count"></summary>
+        <p class="moves" id="moves"></p>
+      </details>
+    </div>
+  </div>
+  <div class="error" id="error" hidden>
+    <b t="p.bad"></b>
+    <p id="why"></p>
+    <p><a href="/patterns"><span t="p.browse"></span></a></p>
+  </div>
+</main>
+{{FOOTER}}
+{{JS:p.js.}}
+<script src="/js/cube.js"></script>
+<script src="/js/draw.js"></script>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var n = parseInt(q.get('n'), 10), name = (q.get('name') || 'Pattern').replace(/[\t\r\n]+/g, ' ').trim().slice(0, 60);
+  var m = (q.get('m') || '').trim().replace(/\s+/g, ' ');
+  function fail(key, raw) { document.getElementById('error').hidden = false; document.getElementById('why').innerHTML = raw ? BcsDraw.esc(raw) : BcsLang.t(key); }
+  if (!(n >= 2 && n <= 15)) return fail('p.js.size');
+  if (!m || m.length > 40000) return fail('p.js.moves');
+  var front, back;
+  try { front = BcsCube.apply(n, m); back = BcsCube.apply(n, m + " x2 y'"); }
+  catch (e) { return fail(null, e.message); }
+  document.querySelector('title').setAttribute('data-dynamic', '');
+  function retitle() { document.title = name + ' - ' + BcsLang.text('p.js.title', { n: n }); }
+  retitle(); document.addEventListener('langchange', retitle);
+  document.getElementById('name').textContent = name;
+  document.getElementById('meta').innerHTML = BcsLang.t('p.js.meta', { n: n });
+  document.getElementById('front').innerHTML = BcsDraw.svg(n, front, { label: name }) + '<figcaption>' + BcsLang.t('p.js.front') + '</figcaption>';
+  document.getElementById('back').innerHTML = BcsDraw.svg(n, back, { label: name }) + '<figcaption>' + BcsLang.t('p.js.back') + '</figcaption>';
+  var tokens = m.split(' ').length;
+  document.getElementById('count').innerHTML = BcsLang.t('p.js.count', { n: tokens });
+  document.getElementById('moves').textContent = m;
+  var query = 'n=' + n + '&name=' + encodeURIComponent(name) + '&m=' + encodeURIComponent(m);
+  var open = document.getElementById('open');
+  if (/Android/i.test(navigator.userAgent)) {
+    // Chrome on Android: the app if installed, else Google Play
+    var play = 'https://play.google.com/store/apps/details?id=io.github.jvcasteljc.bigcubesolver';
+    open.href = 'intent://p?' + query + '#Intent;scheme=bigcubesolver;package=io.github.jvcasteljc.bigcubesolver;S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
+  } else open.href = 'bigcubesolver://p?' + query;
+  document.getElementById('copy').onclick = function () {
+    var url = location.origin + '/p?' + query, btn = this;
+    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
+      btn.innerHTML = BcsLang.t('p.js.copied');
+    }, function () { prompt(BcsLang.text('p.js.prompt'), url); });
+  };
+  document.getElementById('pattern').hidden = false;
+})();
+</script>
+</body>
+</html>

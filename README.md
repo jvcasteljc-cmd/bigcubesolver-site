@@ -11,21 +11,25 @@ GitHub Pages publishes every push to `main` at https://bigcubesolver.com.
 | `/faq` | faq.html - questions and answers |
 | `/support` | support.html - support@bigcubesolver.com |
 | `/test`, `/test-guide`, `/feedback` | tester pages (feedback.html redirects to the Google Form once FORM_URL is set) |
-| `/privacy` | privacy.html, GENERATED from privacy.md by `node tools/build-privacy.js` |
+| `/privacy` | privacy.html (from privacy.md + i18n/privacy/) |
 | `/.well-known/assetlinks.json` | lets Android open `/p` links straight in the app (`.nojekyll` keeps the folder) |
 
-## Languages (English, Spanish)
+## Pages are GENERATED - edit src/ and i18n/, then build
 
-Every text is written once per language, marked `data-lang="en"` / `data-lang="es"`;
-`js/lang.js` (loaded in `<head>`) picks one from `?lang=`, `#en`/`#es`, the
-saved choice, or the browser, and `css/site.css` hides the others. Page
-scripts that build text use `BcsLang.both({en, es})`. `<title data-es="..">`
-gives the Spanish tab title. A new page: copy support.html.
+    node tools/check-i18n.js   # every language has every text, same links/tags
+    node tools/build-site.js   # src/*.html + i18n/<lang>.json -> ./<page>.html
 
-## Header and footer
-
-Shared by every page, defined ONCE in `tools/layout.js` (tabs, language
-buttons, footer links). After editing it run `node tools/sync-layout.js`.
+- `src/<page>.html`: templates. `<h1 t="key"></h1>` becomes one copy per
+  language (`data-lang="xx"`), `{{HEADER:page}}`, `{{FOOTER}}`, `{{HEAD}}`,
+  `{{JS:prefix}}` (texts for page scripts: `BcsLang.t(key, vars)`), `{{PRIVACY}}`.
+- `i18n/<lang>.json`: every text, keyed; English is the source.
+- Privacy: `privacy.md` (en + es, a copy of the app repo's docs/PRIVACY.md) and
+  `i18n/privacy/<lang>.md` for the other 12 (translations; English prevails).
+- 14 languages, menu order in tools/build-site.js (LANGS) and js/lang.js:
+  en, es, then zh hi fr pt ru id de ja tr ko it pl (by number of speakers).
+  `js/lang.js` picks one (?lang=, #xx, saved choice, browser) and css/site.css
+  shows only that copy. Support answers in English and Spanish only (said on
+  /support in every language).
 
 `js/cube.js` is a small copy of the app's move engine (same notation), checked
 against the engine by `node tools/check-cube.js <engine applier>`.

@@ -12,6 +12,7 @@ body { margin: 0; background: var(--bg); color: var(--text);
   font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 a { color: var(--link); }
 img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 16px; }
 
 /* header */
@@ -112,12 +113,36 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 40
 footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 footer a { color: var(--muted); }
 
-/* languages: every text exists once per language (js/lang.js picks one) */
-html[lang="en"] [data-lang]:not([data-lang="en"]), html[lang="es"] [data-lang]:not([data-lang="es"]) { display: none !important; }
-.langs { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; flex: none; }
-.langs button { background: none; border: 0; color: var(--muted); font: inherit; font-size: 13px; font-weight: 650;
-  padding: 4px 9px; border-radius: 999px; cursor: pointer; }
-.langs button[aria-pressed="true"] { background: var(--accent); color: #15181f; }
+/* languages: every text exists once per language (tools/build-site.js);
+   js/lang.js sets <html lang>, and only that language's copy shows */
+html[lang="en"] [data-lang]:not([data-lang="en"]),
+html[lang="es"] [data-lang]:not([data-lang="es"]),
+html[lang="zh"] [data-lang]:not([data-lang="zh"]),
+html[lang="hi"] [data-lang]:not([data-lang="hi"]),
+html[lang="fr"] [data-lang]:not([data-lang="fr"]),
+html[lang="pt"] [data-lang]:not([data-lang="pt"]),
+html[lang="ru"] [data-lang]:not([data-lang="ru"]),
+html[lang="id"] [data-lang]:not([data-lang="id"]),
+html[lang="de"] [data-lang]:not([data-lang="de"]),
+html[lang="ja"] [data-lang]:not([data-lang="ja"]),
+html[lang="tr"] [data-lang]:not([data-lang="tr"]),
+html[lang="ko"] [data-lang]:not([data-lang="ko"]),
+html[lang="it"] [data-lang]:not([data-lang="it"]),
+html[lang="pl"] [data-lang]:not([data-lang="pl"]) { display: none !important; }
+.langs { position: relative; flex: none; background: none; border: 0; padding: 0; border-radius: 0; }
+.langs summary { list-style: none; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; font-size: 13px; font-weight: 700; user-select: none; }
+.langs summary::-webkit-details-marker { display: none; }
+.langs summary:hover, .langs[open] summary { color: var(--text); background: var(--card); }
+.langs .caret { width: 0; height: 0; border: 4px solid transparent; border-top-color: currentColor; margin-top: 4px; }
+.langlist { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; width: 220px; max-height: min(340px, 65vh);
+  overflow-y: auto; overscroll-behavior: contain; background: var(--bg2); border: 1px solid var(--line); border-radius: 12px;
+  padding: 6px; box-shadow: 0 12px 32px rgba(0,0,0,.45); }
+.langlist button { display: block; width: 100%; text-align: left; background: none; border: 0; color: var(--text);
+  font: inherit; font-size: 15px; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+.langlist button:hover { background: var(--card); }
+.langlist button[aria-selected="true"] { background: var(--accent); color: #15181f; font-weight: 650; }
+.langlist hr { border: 0; border-top: 1px solid var(--line); margin: 6px 4px; }
 
 /* phones: brand + language on the first line, the tabs on a second line */
 .brand { white-space: nowrap; }
@@ -138,3 +163,16 @@ html[lang="en"] [data-lang]:not([data-lang="en"]), html[lang="es"] [data-lang]:n
 .qa h2 { margin-top: 36px; }
 .mailbox { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 20px 0; }
 .mailbox .addr { font-size: clamp(19px, 4.4vw, 24px); font-weight: 750; word-break: break-all; }
+
+/* tester pages: numbered steps, the 14-day request, short Q&A */
+.steps { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 14px; counter-reset: s; }
+.steps li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 18px 66px; position: relative; counter-increment: s; }
+.steps li::before { content: counter(s); position: absolute; left: 16px; top: 16px; width: 36px; height: 36px; border-radius: 10px;
+  background: var(--accent); color: #15181f; font-weight: 800; display: grid; place-items: center; font-size: 19px; }
+.steps h3 { margin: 0 0 6px; font-size: 19px; }
+.steps p { margin: 0 0 12px; color: var(--muted); }
+.steps .btn { margin-top: 2px; }
+.ask { background: #2a2a1a; border: 1px solid #5c5320; border-radius: var(--radius); padding: 16px 18px; margin: 0 0 24px; }
+.ask b { color: var(--accent); }
+.faq h3 { font-size: 17px; margin: 18px 0 4px; }
+.faq p { margin: 0; color: var(--muted); }
