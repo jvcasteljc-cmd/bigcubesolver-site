@@ -7,7 +7,8 @@
 <link rel="icon" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/site.css">
-<title>What to try - Big Cube Solver</title>
+<title data-es="Qué probar - Big Cube Solver">What to try - Big Cube Solver</title>
+<script src="/js/lang.js"></script>
 <meta name="description" content="What to try in the Big Cube Solver test version, and how to report a problem.">
 <style>
   .steps { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 14px; counter-reset: s; }
@@ -21,15 +22,14 @@
   .ask b { color: var(--accent); }
   .faq h3 { font-size: 17px; margin: 18px 0 4px; }
   .faq p { margin: 0; color: var(--muted); }
-  [data-lang] { display: none; }
-  html[lang="es"] [data-lang="es"], html[lang="en"] [data-lang="en"] { display: revert; }
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
-    <nav><a href="/">Home</a><a href="/patterns">Patterns</a><a href="/privacy">Privacy</a></nav>
+    <nav><a href="/"><span data-lang="en">Home</span><span data-lang="es">Inicio</span></a><a href="/patterns"><span data-lang="en">Patterns</span><span data-lang="es">Patrones</span></a><a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a><a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a><a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a></nav>
+    <div class="langs" role="group" aria-label="Language / Idioma"><button type="button" data-set="en" lang="en" title="English">EN</button><button type="button" data-set="es" lang="es" title="Español">ES</button></div>
   </div>
   <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
@@ -65,22 +65,11 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Big Cube Solver</span>
-    <a href="/privacy">Privacy</a>
-    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+    <a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a>
+    <a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a>
+    <a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+    <a href="mailto:support@bigcubesolver.com">support@bigcubesolver.com</a>
   </div>
 </footer>
-<script>
-(function () {
-  var html = document.documentElement, want = null;
-  try { want = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang'); } catch (e) {}
-  function set(l) {
-    html.lang = l;
-    document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === l)); });
-    try { localStorage.setItem('lang', l); } catch (e) {}
-  }
-  document.querySelectorAll('[data-set]').forEach(function (b) { b.onclick = function () { set(b.dataset.set); }; });
-  set(want === 'en' || want === 'es' ? want : (/^es/i.test(navigator.language || '') ? 'es' : 'en'));
-})();
-</script>
 </body>
 </html>

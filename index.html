@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Big Cube Solver - every cube from 2×2 to 15×15</title>
+<title data-es="Big Cube Solver - todos los cubos de 2×2 a 15×15">Big Cube Solver - every cube from 2×2 to 15×15</title>
+<script src="/js/lang.js"></script>
 <meta name="description" content="Android app: scan any cube from 2×2 to 15×15 with the camera and follow a short solution on a 3D cube. Picture cubes, patterns, smart cubes. No ads, no account.">
 <meta property="og:title" content="Big Cube Solver - every cube from 2×2 to 15×15">
 <meta property="og:description" content="Scan it, solve it, follow it - every size up to 15×15.">
@@ -18,7 +19,8 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
-    <nav><a href="/" aria-current="page">Home</a><a href="/patterns">Patterns</a><a href="/privacy">Privacy</a></nav>
+    <nav><a href="/" aria-current="page"><span data-lang="en">Home</span><span data-lang="es">Inicio</span></a><a href="/patterns"><span data-lang="en">Patterns</span><span data-lang="es">Patrones</span></a><a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a><a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a><a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a></nav>
+    <div class="langs" role="group" aria-label="Language / Idioma"><button type="button" data-set="en" lang="en" title="English">EN</button><button type="button" data-set="es" lang="es" title="Español">ES</button></div>
   </div>
   <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
@@ -26,60 +28,66 @@
 <main>
   <div class="hero wrap">
     <img class="logo" src="/img/logo.webp" alt="Big Cube Solver" width="720" height="481">
-    <h1>Every cube. Up to 15×15.</h1>
-    <p class="lead">Point your phone's camera at any cube from 2×2 to 15×15 and follow a short solution, move by move, on a 3D cube - with the real one in your hands.</p>
-    <a class="btn primary" href="#get">Get the app</a>
-    <a class="btn ghost" href="/patterns">Browse patterns</a>
-    <div class="soon">Android · coming soon to Google Play</div>
+    <h1 data-lang="en">Every cube. Up to 15×15.</h1>
+    <h1 data-lang="es">Todos los cubos. Hasta 15×15.</h1>
+    <p class="lead" data-lang="en">Point your phone's camera at any cube from 2×2 to 15×15 and follow a short solution, move by move, on a 3D cube - with the real one in your hands.</p>
+    <p class="lead" data-lang="es">Apunta la cámara del teléfono a cualquier cubo de 2×2 a 15×15 y sigue una solución corta, movimiento a movimiento, en un cubo 3D - con el de verdad en las manos.</p>
+    <a class="btn primary" href="#get"><span data-lang="en">Get the app</span><span data-lang="es">Consigue la app</span></a>
+    <a class="btn ghost" href="/patterns"><span data-lang="en">Browse patterns</span><span data-lang="es">Ver patrones</span></a>
+    <div class="soon"><span data-lang="en">Android · coming soon to Google Play</span><span data-lang="es">Android · muy pronto en Google Play</span></div>
   </div>
 
   <section>
     <div class="wrap">
-      <h2>What it does</h2>
-      <p class="sub">Most solvers stop at 6×6 or 7×7. This one keeps going to 15×15 - and it runs on modest phones too, from Android 5.0 up.</p>
+      <h2 data-lang="en">What it does</h2><h2 data-lang="es">Qué hace</h2>
+      <p class="sub" data-lang="en">Most solvers stop at 6×6 or 7×7. This one keeps going to 15×15 - and it runs on modest phones too, from Android 5.0 up.</p>
+      <p class="sub" data-lang="es">La mayoría de los resolvedores se quedan en 6×6 o 7×7. Este sigue hasta 15×15 - y funciona también en teléfonos modestos, desde Android 5.0.</p>
       <div class="features">
-        <div class="feature"><img src="/img/01-big-cubes.webp" alt="A 15×15 cube on the phone screen" loading="lazy" width="540" height="960"><div><h3>Big cubes, short solutions</h3><p>Custom solvers reduce a 15×15 to a 13×13, then 11×11 ... down to a 3×3, so you never wade through thousands of needless moves.</p></div></div>
-        <div class="feature"><img src="/img/02-follow.webp" alt="Following a solution step by step" loading="lazy" width="540" height="960"><div><h3>Follow at your pace</h3><p>Animated 3D moves you can step, rewind, slow down or speed up, in chapters: centres, edges, the final 3×3.</p></div></div>
-        <div class="feature"><img src="/img/03-picture-cubes.webp" alt="A picture cube" loading="lazy" width="540" height="960"><div><h3>Picture cubes, solved for real</h3><p>Turned centres are solved too, so every photo or logo comes back whole and upright.</p></div></div>
-        <div class="feature"><img src="/img/04-own-colours.webp" alt="A cube in its own colours" loading="lazy" width="540" height="960"><div><h3>Scan with the camera</h3><p>Show each face and the colours are read automatically - odd colour schemes are read as they are.</p></div></div>
-        <div class="feature"><img src="/img/05-patterns.webp" alt="Pattern gallery" loading="lazy" width="540" height="960"><div><h3>Patterns</h3><p>Spirals, rings, checkerboards, cubes in cubes on every size - and your own, shared as a link.</p></div></div>
-        <div class="feature"><img src="/img/06-design.webp" alt="Designing a face" loading="lazy" width="540" height="960"><div><h3>Your own designs</h3><p>Draw on a face or place stickers one by one, and the app finds the moves.</p></div></div>
+        <div class="feature"><img src="/img/01-big-cubes.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Big cubes, short solutions</h3><h3 data-lang="es">Cubos grandes, soluciones cortas</h3><p data-lang="en">Custom solvers reduce a 15×15 to a 13×13, then 11×11 ... down to a 3×3, so you never wade through thousands of needless moves.</p><p data-lang="es">Resolvedores propios reducen un 15×15 a un 13×13, luego a 11×11 ... hasta un 3×3, sin miles de movimientos innecesarios.</p></div></div>
+        <div class="feature"><img src="/img/02-follow.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Follow at your pace</h3><h3 data-lang="es">Síguela a tu ritmo</h3><p data-lang="en">Animated 3D moves you can step, rewind, slow down or speed up, in chapters: centres, edges, the final 3×3.</p><p data-lang="es">Movimientos animados en 3D que puedes avanzar, retroceder, frenar o acelerar, por capítulos: centros, aristas, el 3×3 final.</p></div></div>
+        <div class="feature"><img src="/img/03-picture-cubes.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Picture cubes, solved for real</h3><h3 data-lang="es">Cubos de imágenes, resueltos de verdad</h3><p data-lang="en">Turned centres are solved too, so every photo or logo comes back whole and upright.</p><p data-lang="es">También se resuelven los centros girados, así cada foto o logo vuelve entero y derecho.</p></div></div>
+        <div class="feature"><img src="/img/04-own-colours.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Scan with the camera</h3><h3 data-lang="es">Escanea con la cámara</h3><p data-lang="en">Show each face and the colours are read automatically - odd colour schemes are read as they are.</p><p data-lang="es">Enseña cada cara y los colores se leen solos - los esquemas de color poco comunes se leen tal cual.</p></div></div>
+        <div class="feature"><img src="/img/05-patterns.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Patterns</h3><h3 data-lang="es">Patrones</h3><p data-lang="en">Spirals, rings, checkerboards, cubes in cubes on every size - and your own, shared as a link.</p><p data-lang="es">Espirales, anillos, damero, cubos dentro de cubos en todos los tamaños - y los tuyos, compartidos como enlace.</p></div></div>
+        <div class="feature"><img src="/img/06-design.webp" alt="" loading="lazy" width="540" height="960"><div><h3 data-lang="en">Your own designs</h3><h3 data-lang="es">Tus propios diseños</h3><p data-lang="en">Draw on a face or place stickers one by one, and the app finds the moves.</p><p data-lang="es">Dibuja en una cara o coloca pegatinas una a una, y la app encuentra los movimientos.</p></div></div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Short solutions, every size</h2>
-      <p class="sub">Average turns to solve a random cube with the short solver. A regular solver answers in seconds on any phone, with more moves - choose per size.</p>
+      <h2 data-lang="en">Short solutions, every size</h2><h2 data-lang="es">Soluciones cortas en todos los tamaños</h2>
+      <p class="sub" data-lang="en">Average turns to solve a random cube with the short solver. A regular solver answers in seconds on any phone, with more moves - choose per size.</p>
+      <p class="sub" data-lang="es">Giros medios para resolver un cubo mezclado con el resolvedor corto. Un resolvedor normal responde en segundos en cualquier teléfono, con más movimientos - elige en cada tamaño.</p>
       <div class="turns">
-        <div><b>~19</b><span>3×3 (never more than 20)</span></div>
+        <div><b>~19</b><span data-lang="en">3×3 (never more than 20)</span><span data-lang="es">3×3 (nunca más de 20)</span></div>
         <div><b>~43</b><span>4×4</span></div>
         <div><b>~69</b><span>5×5</span></div>
         <div><b>~200</b><span>7×7</span></div>
         <div><b>~620</b><span>10×10</span></div>
-        <div><b>~1,750</b><span>15×15</span></div>
+        <div><b data-lang="en">~1,750</b><b data-lang="es">~1.750</b><span>15×15</span></div>
       </div>
     </div>
   </section>
 
   <section id="get">
     <div class="wrap">
-      <h2>Free to start, buy once</h2>
-      <p class="sub">No subscription, no ads, no account, no telemetry. Software as it used to be: buy it once, use it forever.</p>
+      <h2 data-lang="en">Free to start, buy once</h2><h2 data-lang="es">Gratis para empezar, se compra una vez</h2>
+      <p class="sub" data-lang="en">No subscription, no ads, no account, no telemetry. Software as it used to be: buy it once, use it forever.</p>
+      <p class="sub" data-lang="es">Sin suscripción, sin anuncios, sin cuenta, sin telemetría. Software como antes: lo compras una vez y es tuyo para siempre.</p>
       <div class="tiers">
-        <div class="tier"><h3>Free</h3><div class="what">2×2, 3×3, 4×4</div><p>Forever. Sticker-sheet picture cubes to turn and scramble included.</p></div>
-        <div class="tier"><h3>Up to 10×10</h3><div class="what">One-time purchase</div><p>Every size from 2×2 to 10×10.</p></div>
-        <div class="tier"><h3>Up to 15×15</h3><div class="what">One-time purchase</div><p>Every size from 2×2 to 15×15, plus picture-cube solving and smart cubes.</p></div>
+        <div class="tier"><h3 data-lang="en">Free</h3><h3 data-lang="es">Gratis</h3><div class="what">2×2, 3×3, 4×4</div><p data-lang="en">Forever. Sticker-sheet picture cubes to turn and scramble included.</p><p data-lang="es">Para siempre. Incluye cubos de imágenes de pegatinas para girar y mezclar.</p></div>
+        <div class="tier"><h3 data-lang="en">Up to 10×10</h3><h3 data-lang="es">Hasta 10×10</h3><div class="what"><span data-lang="en">One-time purchase</span><span data-lang="es">Pago único</span></div><p data-lang="en">Every size from 2×2 to 10×10.</p><p data-lang="es">Todos los tamaños de 2×2 a 10×10.</p></div>
+        <div class="tier"><h3 data-lang="en">Up to 15×15</h3><h3 data-lang="es">Hasta 15×15</h3><div class="what"><span data-lang="en">One-time purchase</span><span data-lang="es">Pago único</span></div><p data-lang="en">Every size from 2×2 to 15×15, plus picture-cube solving and smart cubes.</p><p data-lang="es">Todos los tamaños de 2×2 a 15×15, más la resolución de cubos de imágenes y los cubos inteligentes.</p></div>
       </div>
-      <p class="soon">Big Cube Solver is in testing and coming soon to Google Play.</p>
+      <p class="soon" data-lang="en">Big Cube Solver is in testing and coming soon to Google Play. <a href="/test">Become a tester</a>.</p>
+      <p class="soon" data-lang="es">Big Cube Solver está en pruebas y llega muy pronto a Google Play. <a href="/test">Hazte probador</a>.</p>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Made for real phones</h2>
-      <ul class="checks">
+      <h2 data-lang="en">Made for real phones</h2><h2 data-lang="es">Hecha para teléfonos reales</h2>
+      <ul class="checks" data-lang="en">
         <li>Works fully offline - no internet needed to scan or solve</li>
         <li>Nothing leaves your phone - see the <a href="/privacy">privacy policy</a></li>
         <li>Bluetooth smart cubes: the screen follows every turn</li>
@@ -87,6 +95,16 @@
         <li>Save, rename and share your cubes and patterns</li>
         <li>Solve a cube by hand on screen and see what happens</li>
       </ul>
+      <ul class="checks" data-lang="es">
+        <li>Funciona sin conexión - no hace falta internet para escanear ni resolver</li>
+        <li>Nada sale de tu teléfono - mira la <a href="/privacy">política de privacidad</a></li>
+        <li>Cubos inteligentes Bluetooth: la pantalla sigue cada giro</li>
+        <li>Arregla solo los centros o solo las aristas, sin tocar lo demás</li>
+        <li>Guarda, renombra y comparte tus cubos y patrones</li>
+        <li>Resuelve un cubo a mano en la pantalla y mira qué pasa</li>
+      </ul>
+      <p style="margin-top:28px"><a class="btn ghost" href="/faq"><span data-lang="en">Questions and answers</span><span data-lang="es">Preguntas y respuestas</span></a>
+        <a class="btn ghost" href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a></p>
     </div>
   </section>
 </main>
@@ -94,8 +112,10 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Big Cube Solver</span>
-    <a href="/privacy">Privacy</a>
-    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+    <a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a>
+    <a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a>
+    <a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+    <a href="mailto:support@bigcubesolver.com">support@bigcubesolver.com</a>
   </div>
 </footer>
 </body>

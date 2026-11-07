@@ -112,12 +112,29 @@ footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 24px 0 40
 footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 footer a { color: var(--muted); }
 
-/* phones: the header on one line */
+/* languages: every text exists once per language (js/lang.js picks one) */
+html[lang="en"] [data-lang]:not([data-lang="en"]), html[lang="es"] [data-lang]:not([data-lang="es"]) { display: none !important; }
+.langs { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; flex: none; }
+.langs button { background: none; border: 0; color: var(--muted); font: inherit; font-size: 13px; font-weight: 650;
+  padding: 4px 9px; border-radius: 999px; cursor: pointer; }
+.langs button[aria-pressed="true"] { background: var(--accent); color: #15181f; }
+
+/* phones: brand + language on the first line, the tabs on a second line */
 .brand { white-space: nowrap; }
-@media (max-width: 460px) {
-  .top .wrap { gap: 8px; }
-  .brand { font-size: 15px; gap: 8px; }
-  .top nav { flex-wrap: nowrap; gap: 0; }
-  .top nav a { padding: 6px 7px; font-size: 14px; }
+@media (max-width: 760px) {
+  .top .wrap { flex-wrap: wrap; gap: 0 8px; padding-top: 6px; }
+  .langs { margin-left: auto; }
+  .top nav { order: 3; width: 100%; margin: 4px -7px 4px; flex-wrap: nowrap; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .top nav::-webkit-scrollbar { display: none; }
+  .top nav a { padding: 6px 7px; font-size: 14.5px; white-space: nowrap; flex: none; }
 }
-@media (max-width: 370px) { .brand span { display: none; } }
+@media (max-width: 400px) { .top nav a { padding: 6px 5px; font-size: 14px; } }
+
+/* Q&A */
+.qa details { margin: 0 0 10px; }
+.qa details summary { color: var(--text); font-weight: 650; }
+.qa details[open] summary { margin-bottom: 6px; }
+.qa details p { margin: 0 0 8px; color: var(--muted); }
+.qa h2 { margin-top: 36px; }
+.mailbox { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 20px 0; }
+.mailbox .addr { font-size: clamp(19px, 4.4vw, 24px); font-weight: 750; word-break: break-all; }

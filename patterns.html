@@ -7,14 +7,16 @@
 <link rel="icon" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/site.css">
-<title>Patterns - Big Cube Solver</title>
+<title data-es="Patrones - Big Cube Solver">Patterns - Big Cube Solver</title>
+<script src="/js/lang.js"></script>
 <meta name="description" content="Patterns for every cube from 2×2 to 15×15. Tap one on your phone to add it to Big Cube Solver.">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
-    <nav><a href="/">Home</a><a href="/patterns" aria-current="page">Patterns</a><a href="/privacy">Privacy</a></nav>
+    <nav><a href="/"><span data-lang="en">Home</span><span data-lang="es">Inicio</span></a><a href="/patterns" aria-current="page"><span data-lang="en">Patterns</span><span data-lang="es">Patrones</span></a><a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a><a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a><a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a></nav>
+    <div class="langs" role="group" aria-label="Language / Idioma"><button type="button" data-set="en" lang="en" title="English">EN</button><button type="button" data-set="es" lang="es" title="Español">ES</button></div>
   </div>
   <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
@@ -22,9 +24,10 @@
   <div class="hero slim wrap"><img class="logo" src="/img/logo.webp" alt="Big Cube Solver" width="720" height="481"></div>
   <section>
     <div class="wrap">
-      <h2>Patterns</h2>
-      <p class="sub">Tap a pattern on your Android phone to open it in Big Cube Solver - it lands in <b>My patterns</b>, ready to form on the cube. Made one yourself? In the app, long-press it in My patterns and choose Share.</p>
-      <div class="chips" id="sizes" role="group" aria-label="Cube size"></div>
+      <h2 data-lang="en">Patterns</h2><h2 data-lang="es">Patrones</h2>
+      <p class="sub" data-lang="en">Tap a pattern on your Android phone to open it in Big Cube Solver - it lands in <b>My patterns</b>, ready to form on the cube. Made one yourself? In the app, long-press it in My patterns and choose Share.</p>
+      <p class="sub" data-lang="es">Toca un patrón en tu teléfono Android para abrirlo en Big Cube Solver - aparece en <b>Mis patrones</b>, listo para formarlo en el cubo. ¿Hiciste uno tú? En la app, mantenlo pulsado en Mis patrones y elige Compartir.</p>
+      <div class="chips" id="sizes" role="group" aria-label="Cube size / Tamaño"></div>
       <div class="grid" id="grid"></div>
       <p class="note" id="status"></p>
     </div>
@@ -33,8 +36,10 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Big Cube Solver</span>
-    <a href="/privacy">Privacy</a>
-    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
+    <a href="/faq"><span data-lang="en">Q&amp;A</span><span data-lang="es">Preguntas</span></a>
+    <a href="/support"><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a>
+    <a href="/privacy"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+    <a href="mailto:support@bigcubesolver.com">support@bigcubesolver.com</a>
   </div>
 </footer>
 <script src="/js/cube.js"></script>
@@ -58,7 +63,7 @@
       a.innerHTML = pic + '<span>' + BcsDraw.esc(p.name) + '</span><small>' + p.n + '×' + p.n + '</small>';
       grid.appendChild(a);
     });
-    status.textContent = list.length === 1 ? '1 pattern' : list.length + ' patterns';
+    status.innerHTML = list.length === 1 ? BcsLang.both({ en: '1 pattern', es: '1 patrón' }) : BcsLang.both({ en: list.length + ' patterns', es: list.length + ' patrones' });
   }
   fetch('/patterns.json').then(function (r) { return r.json(); }).then(function (data) {
     all = data.patterns;
@@ -73,7 +78,7 @@
     });
     var want = +(new URLSearchParams(location.search).get('size'));
     show(sizes.indexOf(want) >= 0 ? want : sizes[0]);
-  }).catch(function () { status.textContent = 'The patterns could not be loaded.'; });
+  }).catch(function () { status.innerHTML = BcsLang.both({ en: 'The patterns could not be loaded.', es: 'No se pudieron cargar los patrones.' }); });
 })();
 </script>
 </body>

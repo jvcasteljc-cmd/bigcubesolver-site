@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const root = path.join(__dirname, '..');
+const { header, footer, LANG_SCRIPT } = require('./layout');
 const md = fs.readFileSync(path.join(root, 'privacy.md'), 'utf8');
 
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -47,38 +48,25 @@ const page = `<!doctype html>
 <link rel="icon" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/site.css">
-<title>Privacy Policy - Big Cube Solver</title>
+<title data-es="Política de privacidad - Big Cube Solver">Privacy Policy - Big Cube Solver</title>
+${LANG_SCRIPT}
 <meta name="description" content="Big Cube Solver does not collect, store on any server, or share any personal data.">
 </head>
 <body>
 <!-- GENERATED from privacy.md by tools/build-privacy.js - edit privacy.md -->
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
-    <nav><a href="/">Home</a><a href="/patterns">Patterns</a><a href="/privacy" aria-current="page">Privacy</a></nav>
-  </div>
-  <div class="stripe"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-</header>
+${header('privacy')}
 <main class="wrap">
   <div class="hero slim"><img class="logo" src="/img/logo.webp" alt="Big Cube Solver" width="720" height="481"></div>
   <div class="prose">
-    <div class="lang"><a class="chip" href="#en">English</a><a class="chip" href="#es">Español</a></div>
-    <article id="en">
+    <article id="en" data-lang="en">
 ${block(en.replace(/^\(Published at [^)]*\)\s*$/m, ''))}
     </article>
-    <hr style="border:0;border-top:1px solid var(--line);margin:40px 0">
-    <article id="es" lang="es">
+    <article id="es" lang="es" data-lang="es">
 ${block(es)}
     </article>
   </div>
 </main>
-<footer>
-  <div class="wrap">
-    <span>© 2026 Big Cube Solver</span>
-    <a href="/privacy">Privacy</a>
-    <a href="mailto:privacy@bigcubesolver.com">privacy@bigcubesolver.com</a>
-  </div>
-</footer>
+${footer()}
 </body>
 </html>
 `;
