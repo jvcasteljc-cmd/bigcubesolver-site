@@ -153,5 +153,8 @@
 "fb.d": "The form will be here very soon. Meanwhile write to <a href=\"mailto:support@bigcubesolver.com?subject=Big%20Cube%20Solver%20feedback\">support@bigcubesolver.com</a>.",
 "nf.title": "Not found - Big Cube Solver",
 "nf.h1": "This page is scrambled",
-"nf.d": "Nothing lives at this address. Try the <a href=\"/\">home page</a> or the <a href=\"/patterns\">patterns</a>."
+"nf.d": "Nothing lives at this address. Try the <a href=\"/\">home page</a> or the <a href=\"/patterns\">patterns</a>.",
+"home.novid.h": "No videos to watch. Ever.",
+"home.novid.d": "Some cube apps make you sit through an ad before they scan your cube, before they show the next move - and, worst of all, before they give you the solution. Big Cube Solver never does. Capture, solve and follow every move without waiting for anything.",
+"home.novid.w": "What you see is what you get: start free, or buy once and use it forever."
 }
