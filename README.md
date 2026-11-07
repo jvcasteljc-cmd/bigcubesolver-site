@@ -16,6 +16,13 @@ GitHub Pages publishes every push to `main` at https://bigcubesolver.com.
 
 ## Pages are GENERATED - edit src/ and i18n/, then build
 
+**Translations are PAUSED (2026-11-07). English is the master site:** every
+change goes into `src/` and `i18n/en.json` only. Other languages are
+translated from the English ONLY when the owner asks; until then a new or
+changed text shows in English in every language. `check-i18n.js` lists the
+to-do (new / changed English texts); after a translation round run
+`cp i18n/en.json i18n/en.translated.json`.
+
     node tools/check-i18n.js   # every language has every text, same links/tags
     node tools/build-site.js   # src/*.html + i18n/<lang>.json -> ./<page>.html
 

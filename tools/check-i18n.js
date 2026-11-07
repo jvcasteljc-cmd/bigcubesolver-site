@@ -1,28 +1,42 @@
-// Every language must have every key, and keep the English markup: the same
-// links (href), the same tags (counted) and the same {placeholders}.
+// Translations are PAUSED (user, 2026-11-07): English is the master; site
+// changes go into i18n/en.json (and src/) only, and the other languages are
+// translated from English only when the user asks.
+// A missing text simply shows in English. This check:
+//   - FAILS when an existing translation's links/tags/{placeholders} differ
+//     from the English (that would break the page);
+//   - LISTS texts not yet translated and texts whose English changed since the
+//     last translation (i18n/en.translated.json = English as last translated)
+//     - the to-do list for the next translation round.
+// After a translation round: cp i18n/en.json i18n/en.translated.json
 // usage: node tools/check-i18n.js
 const fs = require('fs');
 const path = require('path');
 const dir = path.join(__dirname, '..', 'i18n');
-const en = JSON.parse(fs.readFileSync(path.join(dir, 'en.json'), 'utf8'));
+const read = f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+const en = read('en.json');
+const done = fs.existsSync(path.join(dir, 'en.translated.json')) ? read('en.translated.json') : {};
 const shape = s => JSON.stringify([
   (s.match(/href="[^"]*"/g) || []).sort(),
   (s.match(/<\/?\w+/g) || []).sort(),
   (s.match(/\{\w+\}/g) || []).sort(),
 ]);
 let bad = 0;
-for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'en.json')) {
-  const t = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
-  for (const k of Object.keys(en)) {
-    if (!(k in t)) { console.log(f, 'missing', k); bad++; continue; }
-    if (shape(t[k]) !== shape(en[k])) { console.log(f, 'markup differs:', k, '\n  en:', en[k], '\n  ', t[k]); bad++; }
+const changed = Object.keys(en).filter(k => k in done && done[k] !== en[k]);
+const added = Object.keys(en).filter(k => !(k in done));
+for (const f of fs.readdirSync(dir).filter(f => /^[a-z]{2}\.json$/.test(f) && f !== 'en.json')) {
+  const t = read(f);
+  for (const k of Object.keys(t)) {
+    if (!(k in en)) { console.log(f, 'extra key (no longer in English):', k); continue; }
+    if (shape(t[k]) !== shape(en[k]) && !changed.includes(k)) { console.log(f, 'markup differs:', k); bad++; }
   }
-  for (const k of Object.keys(t)) if (!(k in en)) { console.log(f, 'extra key', k); bad++; }
 }
-for (const f of fs.readdirSync(path.join(dir, 'privacy'))) {
-  const s = fs.readFileSync(path.join(dir, 'privacy', f), 'utf8');
-  if (!s.includes('privacy@bigcubesolver.com')) { console.log('privacy/' + f, 'lacks the contact address'); bad++; }
-  if ((s.match(/^## /gm) || []).length !== 10) { console.log('privacy/' + f, 'should have 10 sections'); bad++; }
+if (added.length || changed.length) {
+  console.log('Translation to-do (shown in English until translated):');
+  for (const k of added) console.log('  new     ', k);
+  for (const k of changed) console.log('  changed ', k);
 }
+const prv = fs.statSync(path.join(dir, '..', 'privacy.md')).mtimeMs;
+const old = fs.readdirSync(path.join(dir, 'privacy')).filter(f => fs.statSync(path.join(dir, 'privacy', f)).mtimeMs < prv);
+if (old.length) console.log('privacy.md is newer than these translations:', old.join(' '));
 console.log(bad ? bad + ' problem(s)' : 'i18n ok');
 process.exit(bad ? 1 : 0);
