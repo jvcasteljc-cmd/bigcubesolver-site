@@ -66,6 +66,7 @@ function footer() {
     <a href="/community">${all('nav.community')}</a>
     <a href="/support">${all('nav.support')}</a>
     <a href="/privacy">${all('nav.privacy')}</a>
+    <a href="/terms">${all('nav.terms')}</a>
     <a href="mailto:support@bigcubesolver.com">support@bigcubesolver.com</a>
   </div>
 </footer>`;
