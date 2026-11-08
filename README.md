@@ -44,3 +44,6 @@ against the engine by `node tools/check-cube.js <engine applier>`.
 Keys in assetlinks.json: the Play upload key and the test (sideload) key.
 After the first Play upload, ADD the app-signing key from Play Console
 (Setup -> App signing -> SHA-256).
+
+## Community (Discord)
+The invite lives in ONE place: `DISCORD` in tools/build-site.js (used as `{{DISCORD}}`). Printed material should point at https://bigcubesolver.com/community, never at the invite. New invite = change that line, `node tools/build-site.js`, commit, push.

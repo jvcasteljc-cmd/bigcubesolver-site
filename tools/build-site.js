@@ -9,6 +9,7 @@
 //   {{HEADER:page}}          the shared header (page = nav entry to light up)
 //   {{FOOTER}}               the shared footer
 //   {{HEAD}}                 the shared <head> lines (css, icons, lang.js)
+//   {{DISCORD}}              the Discord invite (DISCORD below)
 //   {{JS:prefix}}            BcsLang.add({...}) with every key starting with prefix
 //   {{PRIVACY}}              the policy, one <article> per language, from
 //                            privacy.md (en + es, the app repo's docs/PRIVACY.md)
@@ -37,7 +38,10 @@ const all = (key, tag = 'span', attrs = '') =>
 const escAttr = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 
 // ---- shared parts
-const NAV = [['home', '/'], ['patterns', '/patterns'], ['faq', '/faq'], ['support', '/support'], ['privacy', '/privacy']];
+// The Discord invite, used ONLY through {{DISCORD}} (and /community, which the
+// printed cards point at): a new invite = change this line and rebuild.
+const DISCORD = 'https://discord.gg/b4JytQxJ7';
+const NAV = [['home', '/'], ['patterns', '/patterns'], ['faq', '/faq'], ['community', '/community'], ['support', '/support'], ['privacy', '/privacy']];
 const GLOBE = '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>';
 function header(page) {
   const links = NAV.map(([id, href]) => `<a href="${href}"${id === page ? ' aria-current="page"' : ''}>${all('nav.' + id)}</a>`).join('');
@@ -58,6 +62,7 @@ function footer() {
   <div class="wrap">
     <span>© 2026 Big Cube Solver</span>
     <a href="/faq">${all('nav.faq')}</a>
+    <a href="/community">${all('nav.community')}</a>
     <a href="/support">${all('nav.support')}</a>
     <a href="/privacy">${all('nav.privacy')}</a>
     <a href="mailto:support@bigcubesolver.com">support@bigcubesolver.com</a>
@@ -120,6 +125,7 @@ for (const f of PAGES) {
   s = s.replace(/\{\{HEADER:(\w*)\}\}/, (_, p) => header(p));
   s = s.replace('{{FOOTER}}', footer());
   s = s.replace('{{PRIVACY}}', () => privacy());
+  s = s.replace(/\{\{DISCORD\}\}/g, DISCORD);
   s = s.replace(/\{\{JS:([\w.]+)\}\}/g, (_, prefix) => {
     const d = {};
     for (const k of Object.keys(T.en).filter(k => k.startsWith(prefix))) {
