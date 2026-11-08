@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{HEAD}}
+<title t="num.page_title"></title>
+<meta name="description" content="How pieces, positions, moves and solving time grow from 2×2 to 15×15 - and why a scrambled 15×15 is like calling 12 shuffled decks of cards right.">
+<meta property="og:title" content="Your cube in numbers - Big Cube Solver">
+<meta property="og:description" content="Pieces, positions, moves and time, from 2×2 to 15×15.">
+<meta property="og:image" content="https://bigcubesolver.com/img/og.png">
+<meta property="og:url" content="https://bigcubesolver.com/numbers">
+</head>
+<body>
+{{HEADER:numbers}}
+<main class="wrap">
+  <div class="hero slim"><img class="logo" src="/img/logo.webp" alt="Big Cube Solver" width="720" height="481"></div>
+  <div class="prose nums">
+    <h1 t="num.title"></h1>
+    <p class="lead" t="num.intro"></p>
+
+    <section class="ncard">
+      <h2 t="num.pieces_title"></h2>
+      <div class="chart" data-chart="pieces"></div>
+      <p t="num.pieces_text"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.turns_title"></h2>
+      <div class="chart" data-chart="turns"></div>
+      <p t="num.turns_text"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.time_title"></h2>
+      <div class="chart" data-chart="time"></div>
+      <p t="num.time_text"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.formula_title"></h2>
+      <p class="formula">8! × 3⁷ × 12! × 2¹¹ ÷ 2</p>
+      <dl class="terms">
+        <dt>8!</dt><dd t="num.term_corners"></dd>
+        <dt>3⁷</dt><dd t="num.term_twists"></dd>
+        <dt>12!</dt><dd t="num.term_edges"></dd>
+        <dt>2¹¹</dt><dd t="num.term_flips"></dd>
+        <dt>÷ 2</dt><dd t="num.term_parity"></dd>
+      </dl>
+      <p class="total" id="total3"></p>
+      <p t="num.formula_text"></p>
+      <p class="small" t="num.formula_general"></p>
+      <p class="small mono" t="num.formula_odd"></p>
+      <p class="small mono" t="num.formula_even"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.positions_title"></h2>
+      <div class="chart" data-chart="positions"></div>
+      <p t="num.positions_text"></p>
+      <p class="strong" id="in-full"></p>
+      <p class="digits" id="digits15"></p>
+      <p class="strong" id="universe"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.deck_title"></h2>
+      <p class="lead" t="num.deck_intro"></p>
+      <div class="deck" id="deck" role="button" tabindex="0"></div>
+      <p class="hint" t="num.deck_tap"></p>
+      <p t="num.deck_count"></p>
+      <p class="digits green" id="deck52"></p>
+      <p t="num.deck_never"></p>
+      <div class="scale" id="scale"></div>
+      <p t="num.deck_scale_text"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.decks_title"></h2>
+      <div class="decks" id="decks"></div>
+      <p t="num.decks_text"></p>
+      <p class="strong big" t="num.decks_15"></p>
+      <p t="num.decks_15_more"></p>
+    </section>
+
+    <section class="ncard">
+      <h2 t="num.pic_title"></h2>
+      <p class="lead" t="num.pic_intro"></p>
+      <div class="phonebox"><canvas id="phone" role="button" tabindex="0"></canvas></div>
+      <p class="hint" t="num.pic_tap"></p>
+      <p class="strong big" t="num.pic_headline"></p>
+      <p t="num.pic_explain"></p>
+      <h3 t="num.pic_ladder_title"></h3>
+      <div class="ladder" id="ladder" role="button" tabindex="0"></div>
+      <p t="num.pic_ladder_text"></p>
+      <h3 t="num.pic_twist_title"></h3>
+      <p t="num.pic_twist"></p>
+    </section>
+  </div>
+</main>
+{{FOOTER}}
+{{JS:num.}}
+<script src="/js/numbers.js"></script>
+</body>
+</html>

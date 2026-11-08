@@ -182,3 +182,48 @@ html[lang="pl"] [data-lang]:not([data-lang="pl"]) { display: none !important; }
 .promise h2 { margin: 0 0 10px; }
 .promise p { margin: 0 0 10px; color: var(--muted); font-size: 18px; }
 .promise .wysiwyg { color: var(--text); font-weight: 650; margin: 0; }
+
+/* /numbers - "Your cube in numbers", the app's About screen */
+.nums .lead { color: var(--text); font-size: 18px; }
+.ncard { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 8px; margin: 18px 0; }
+.ncard h2 { margin: 0 0 8px; font-size: 21px; }
+.ncard h3 { margin: 22px 0 6px; font-size: 17px; }
+.ncard p { color: #c3cad7; }
+.ncard .chart { margin: 6px 0 4px; overflow: hidden; }
+.ncard .chart svg { display: block; max-width: 100%; }
+.ncard .chart text.v { fill: #edeff4; font-size: 10px; }
+.ncard .formula { text-align: center; font-size: clamp(22px, 5vw, 28px); font-weight: 750; color: #fff; margin: 6px 0 12px; }
+.ncard .terms { display: grid; grid-template-columns: 56px 1fr; gap: 4px 10px; margin: 0 0 8px; }
+.ncard .terms dt { color: var(--yellow); font-weight: 750; font-size: 18px; }
+.ncard .terms dd { margin: 0; color: #c3cad7; }
+.ncard .total { text-align: center; font-weight: 750; color: var(--text); font-size: 18px; }
+.ncard .small { font-size: 14px; color: var(--faint); }
+.ncard .mono { font-family: ui-monospace, Consolas, monospace; color: #d7dce6; }
+.ncard .strong { color: var(--text); font-weight: 650; }
+.ncard .big { font-size: 19px; color: #fff; }
+.ncard .hint { text-align: center; font-size: 14px; color: var(--faint); margin-top: 6px; }
+.ncard .digits { font: 13px/1.5 ui-monospace, Consolas, monospace; color: #b07cf0; overflow-wrap: normal; word-break: normal; user-select: all; }
+.ncard .digits.green { color: #2fcb6e; font-weight: 700; }
+.deck { display: grid; grid-template-columns: repeat(13, 1fr); gap: 3px; cursor: pointer; user-select: none; }
+.pc { aspect-ratio: .72; background: #f9f7f0; border: 1px solid #8a93a6; border-radius: 4px; color: #1e222c;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; font-size: clamp(9px, 2.2vw, 16px); }
+.pc.red { color: #d6182b; } .pc b { font-weight: 800; } .pc i { font-style: normal; font-size: 1.2em; margin-top: 2px; }
+.scale .srow { margin: 10px 0; font-size: 14px; color: #b6becd; }
+.scale .srow.hi { color: #fff; font-weight: 700; }
+.scale .sbar { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.scale .sbar i { display: block; height: 12px; border-radius: 3px; background: #4d6a9c; min-width: 3px; }
+.scale .srow.hi .sbar i { background: #2fcb6e; }
+.scale .sbar b { white-space: nowrap; font-size: 14px; }
+.decks .drow { display: grid; grid-template-columns: 52px 1fr auto; align-items: center; gap: 8px; height: 26px; font-size: 14px; color: #b6becd; }
+.decks .drow b { color: var(--text); white-space: nowrap; } .decks .drow.hi b { color: #fff; }
+.decks .art { display: flex; align-items: center; overflow: hidden; height: 20px; }
+.decks .fan { display: flex; }
+.decks .mini { width: 13px; height: 18px; background: #f9f7f0; border: 1px solid #8a93a6; border-radius: 2px; margin-right: -6px; position: relative; }
+.decks .mini::after { content: ""; position: absolute; left: 3px; top: 3px; width: 4px; height: 4px; border-radius: 50%; background: #1e222c; }
+.decks .mini.red::after { background: #d6182b; }
+.decks .dk { flex: none; width: 15px; height: 19px; margin-right: 7px; border-radius: 2px; background: #2e5fb8;
+  box-shadow: 1.5px -1.5px 0 #dce2ee, 3px -3px 0 #dce2ee; border: 1px solid #f9f7f0; overflow: hidden; }
+.phonebox { display: flex; justify-content: center; }
+.phonebox canvas, .ladder canvas { display: block; max-width: 100%; cursor: pointer; image-rendering: pixelated; }
+.ladder p { margin: 12px 0 4px; color: var(--text); font-size: 15px; }
+.ladder canvas { outline: 1px solid #555d6e; }
