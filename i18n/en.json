@@ -24,6 +24,8 @@
 "home.f5.d": "Spirals, rings, checkerboards, cubes in cubes on every size - and your own, shared as a link.",
 "home.f6.t": "Your own designs",
 "home.f6.d": "Draw on a face or place stickers one by one, and the app finds the moves.",
+"home.f7.t": "Smart cubes, wearing any skin",
+"home.f7.d": "Connect a Bluetooth smart cube (GAN, Giiker, QiYi, Rubik's Connected): the screen follows every turn, guides each move and times your solves. Put a picture skin on it - the pictures turn with your cube.",
 "home.turns.h": "Short solutions, every size",
 "home.turns.sub": "Average turns to solve a random cube with the short solver. A regular solver answers in seconds on any phone, with more moves - choose per size.",
 "home.turns.3": "3×3 (never more than 20)",
