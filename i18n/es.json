@@ -107,7 +107,7 @@
 "test.h1": "Prueba Big Cube Solver antes que nadie",
 "test.intro": "La app resuelve cualquier cubo de 2×2 a 15×15. Antes de publicarla en Google Play necesitamos probadores. Son tres pasos en tu teléfono Android (Android 10 o más reciente), con la <b>misma cuenta de Google</b> que usas en Play Store.",
 "test.s1.h": "Únete al grupo de probadores",
-"test.s1.d": "Abre el grupo y pulsa <b>Unirse al grupo</b>. Nadie más verá tu correo.",
+"test.s1.d": "Abre el grupo y pulsa <b>Solicitar unirse al grupo</b>. Aprobamos cada solicitud a mano, normalmente el mismo día; espera el correo de aprobación antes del paso 2. Nadie más verá tu correo.",
 "test.s1.b": "Abrir el grupo",
 "test.s2.h": "Hazte probador",
 "test.s2.d": "Acepta unirte a la prueba con el botón de la página de Google Play (<b>Become a tester</b> si aparece en inglés). Si dice que no está disponible, espera unos minutos tras el paso 1 y vuelve a intentarlo.",
