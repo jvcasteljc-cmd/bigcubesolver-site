@@ -26,6 +26,8 @@
 "home.f6.d": "Draw on a face or place stickers one by one, and the app finds the moves.",
 "home.f7.t": "Smart cubes, wearing any skin",
 "home.f7.d": "Connect a Bluetooth smart cube (GAN, Giiker, QiYi, Rubik's Connected): the screen follows every turn, guides each move and times your solves. Put a picture skin on it - the pictures turn with your cube.",
+"home.f8.t": "Every cube. 2×2 to 15×15.",
+"home.f8.d": "One app for every size, from a pocket 2×2 to a 15×15. No ads, no telemetry - buy once, use forever.",
 "home.turns.h": "Short solutions, every size",
 "home.turns.sub": "Average turns to solve a random cube with the short solver. A regular solver answers in seconds on any phone, with more moves - choose per size.",
 "home.turns.3": "3×3 (never more than 20)",
