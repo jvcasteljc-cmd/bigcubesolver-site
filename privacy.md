@@ -103,12 +103,12 @@ recopila datos personales, no los guarda en ningún servidor y no los comparte.*
 ## Cámara
 
 La app pide permiso para usar la cámara **solo** para leer los colores de tu
-cubo cuando eliges *Escanear*, o para fotografiar un cubo con dibujos cuando
-eliges *Cubo con dibujos*. Las imágenes se procesan en tu teléfono mientras
+cubo cuando eliges *Escanear*, o para fotografiar un Cubo con Imágenes cuando
+eliges *Cubo con Imágenes*. Las imágenes se procesan en tu teléfono mientras
 escaneas.
 
 - En un escaneo de colores no se guarda ninguna imagen: solo los colores leídos.
-- En un cubo con dibujos se guardan pequeños fragmentos de las fotos (uno por
+- En un Cubo con Imágenes se guardan pequeños fragmentos de las fotos (uno por
   pegatina) **en el almacenamiento privado de la app en tu teléfono**, para
   mostrar tu cubo con sus propias imágenes. Se borran al desinstalar la app.
 
@@ -136,7 +136,7 @@ dato de pago.
 ## Archivos que decides guardar
 
 Cuando usas *Guardar*, *Compartir* o un informe que decides guardar (prueba de
-rendimiento, informe del cubo inteligente, comprobación del cubo con dibujos),
+rendimiento, informe del cubo inteligente, comprobación del Cubo con Imágenes),
 la app escribe el archivo donde tú eliges: la carpeta BigCubeSolver en Documentos, u
 otra ubicación elegida con el selector de archivos de Android. Esos archivos se
 quedan en tu dispositivo o van adonde tú decidas compartirlos. La app nunca los
