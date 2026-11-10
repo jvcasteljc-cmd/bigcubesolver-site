@@ -8,6 +8,10 @@
 //     last translation (i18n/en.translated.json = English as last translated)
 //     - the to-do list for the next translation round.
 // After a translation round: cp i18n/en.json i18n/en.translated.json
+// SPANISH IS KEPT UP TO DATE (user, 2026-11-09: "Keep only the English and
+// Spanish versions of the site up to date"): it has its own baseline,
+// i18n/es.translated.json - after updating es.json: cp i18n/en.json i18n/es.translated.json
+// and the to-do list for Spanish should be empty before every push.
 // usage: node tools/check-i18n.js
 const fs = require('fs');
 const path = require('path');
@@ -21,20 +25,25 @@ const shape = s => JSON.stringify([
   (s.match(/\{\w+\}/g) || []).sort(),
 ]);
 let bad = 0;
-const changed = Object.keys(en).filter(k => k in done && done[k] !== en[k]);
-const added = Object.keys(en).filter(k => !(k in done));
+const base = lang => fs.existsSync(path.join(dir, lang + '.translated.json')) ? read(lang + '.translated.json') : done;
+const todo = b => [Object.keys(en).filter(k => !(k in b)), Object.keys(en).filter(k => k in b && b[k] !== en[k])];
 for (const f of fs.readdirSync(dir).filter(f => /^[a-z]{2}\.json$/.test(f) && f !== 'en.json')) {
   const t = read(f);
+  const changed = todo(base(f.slice(0, 2)))[1];
   for (const k of Object.keys(t)) {
     if (!(k in en)) { console.log(f, 'extra key (no longer in English):', k); continue; }
     if (shape(t[k]) !== shape(en[k]) && !changed.includes(k)) { console.log(f, 'markup differs:', k); bad++; }
   }
 }
-if (added.length || changed.length) {
-  console.log('Translation to-do (shown in English until translated):');
-  for (const k of added) console.log('  new     ', k);
-  for (const k of changed) console.log('  changed ', k);
-}
+const [esAdded, esChanged] = todo(base('es'));
+if (esAdded.length || esChanged.length) {
+  console.log('SPANISH to-do (kept up to date - translate before pushing):');
+  for (const k of esAdded) console.log('  new     ', k);
+  for (const k of esChanged) console.log('  changed ', k);
+} else console.log('Spanish: up to date');
+const [added, changed] = todo(done);
+if (added.length || changed.length)
+  console.log('Other languages (paused): ' + added.length + ' new and ' + changed.length + ' changed texts show in English.');
 const prv = fs.statSync(path.join(dir, '..', 'privacy.md')).mtimeMs;
 const old = fs.readdirSync(path.join(dir, 'privacy')).filter(f => fs.statSync(path.join(dir, 'privacy', f)).mtimeMs < prv);
 if (old.length) console.log('privacy.md is newer than these translations:', old.join(' '));

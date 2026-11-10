@@ -19,7 +19,15 @@ GitHub Pages publishes every push to `main` at https://bigcubesolver.com.
 **Translations are PAUSED (2026-11-07). English is the master site:** every
 change goes into `src/` and `i18n/en.json` only. Other languages are
 translated from the English ONLY when the owner asks; until then a new or
-changed text shows in English in every language. `check-i18n.js` lists the
+changed text shows in English in every language.
+
+**SPANISH IS KEPT UP TO DATE (2026-11-09, owner: "Keep only the English and
+Spanish versions of the site up to date").** Every English change goes into
+`i18n/es.json` in the same commit, then `cp i18n/en.json i18n/es.translated.json`
+(Spanish's own baseline); `check-i18n.js` lists the Spanish to-do first and it
+must be empty before a push. When an English change makes an old translation
+in the paused languages FALSE (as "Android 5.0" -> "Android 10" did), delete
+that key from those languages so they show the English. `check-i18n.js` lists the
 to-do (new / changed English texts); after a translation round run
 `cp i18n/en.json i18n/en.translated.json`.
 
