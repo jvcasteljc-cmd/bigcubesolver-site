@@ -4,7 +4,7 @@
 
 *Questa è una traduzione; fa fede la versione in inglese.*
 
-Big Cube Solver ("l'app") è sviluppata da Big Cube Solver. Questa informativa spiega cosa fa l'app con le tue informazioni. In breve: **l'app non raccoglie, non conserva su alcun server e non condivide alcun dato personale.**
+Big Cube Solver ("l'app") è sviluppata dal team di Big Cube Solver. Questa informativa spiega cosa fa l'app con le tue informazioni. In breve: **l'app non raccoglie, non conserva su alcun server e non condivide alcun dato personale.**
 
 ## Cosa l'app non fa
 

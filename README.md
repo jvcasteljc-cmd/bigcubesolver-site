@@ -16,20 +16,15 @@ GitHub Pages publishes every push to `main` at https://bigcubesolver.com.
 
 ## Pages are GENERATED - edit src/ and i18n/, then build
 
-**Translations are PAUSED (2026-11-07). English is the master site:** every
-change goes into `src/` and `i18n/en.json` only. Other languages are
-translated from the English ONLY when the owner asks; until then a new or
-changed text shows in English in every language.
-
-**SPANISH IS KEPT UP TO DATE (2026-11-09, owner: "Keep only the English and
-Spanish versions of the site up to date").** Every English change goes into
-`i18n/es.json` in the same commit, then `cp i18n/en.json i18n/es.translated.json`
-(Spanish's own baseline); `check-i18n.js` lists the Spanish to-do first and it
-must be empty before a push. When an English change makes an old translation
-in the paused languages FALSE (as "Android 5.0" -> "Android 10" did), delete
-that key from those languages so they show the English. `check-i18n.js` lists the
-to-do (new / changed English texts); after a translation round run
-`cp i18n/en.json i18n/en.translated.json`.
+**ALL 14 LANGUAGES ARE CURRENT (2026-11-11, owner: "translate the App and the
+site to all 14 languages. English version is the master").** English stays the
+master: every change starts in `src/` and `i18n/en.json`, and its translations
+go into all 13 other `i18n/<lang>.json` (and `i18n/privacy/<lang>.md` when the
+English part of privacy.md changes) in the same round. Then
+`cp i18n/en.json i18n/en.translated.json` and `cp i18n/en.json i18n/es.translated.json`;
+`check-i18n.js` lists the to-do (Spanish first, then the others) and must be
+clean before a push. (Paused 2026-11-07 .. 2026-11-11, when only English and
+Spanish were kept current.)
 
     node tools/check-i18n.js   # every language has every text, same links/tags
     node tools/build-site.js   # src/*.html + i18n/<lang>.json -> ./<page>.html

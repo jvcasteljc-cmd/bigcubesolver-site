@@ -4,7 +4,7 @@
 
 *Ini adalah terjemahan; versi bahasa Inggris yang menjadi acuan.*
 
-Big Cube Solver ("aplikasi") dikembangkan oleh Big Cube Solver. Kebijakan ini menjelaskan apa yang dilakukan aplikasi terhadap informasi Anda. Singkatnya: **aplikasi tidak mengumpulkan, tidak menyimpan di server mana pun, dan tidak membagikan data pribadi apa pun.**
+Big Cube Solver ("aplikasi") dikembangkan oleh tim Big Cube Solver. Kebijakan ini menjelaskan apa yang dilakukan aplikasi terhadap informasi Anda. Singkatnya: **aplikasi tidak mengumpulkan, tidak menyimpan di server mana pun, dan tidak membagikan data pribadi apa pun.**
 
 ## Yang tidak dilakukan aplikasi
 

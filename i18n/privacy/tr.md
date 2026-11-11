@@ -4,7 +4,7 @@
 
 *Bu bir çeviridir; esas alınan metin İngilizce sürümdür.*
 
-Big Cube Solver ("uygulama"), Big Cube Solver tarafından geliştirilmektedir. Bu politika, uygulamanın bilgilerinizle ne yaptığını açıklar. Kısacası: **uygulama hiçbir kişisel veriyi toplamaz, hiçbir sunucuda saklamaz ve paylaşmaz.**
+Big Cube Solver ("uygulama"), Big Cube Solver ekibi tarafından geliştirilmektedir. Bu politika, uygulamanın bilgilerinizle ne yaptığını açıklar. Kısacası: **uygulama hiçbir kişisel veriyi toplamaz, hiçbir sunucuda saklamaz ve paylaşmaz.**
 
 ## Uygulamanın yapmadıkları
 

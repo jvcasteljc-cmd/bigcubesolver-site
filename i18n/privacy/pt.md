@@ -4,7 +4,7 @@
 
 *Esta é uma tradução; a versão em inglês é a de referência.*
 
-O Big Cube Solver ("o app") é desenvolvido pela Big Cube Solver. Esta política explica o que o app faz com as suas informações. Em resumo: **o app não coleta, não armazena em nenhum servidor e não compartilha nenhum dado pessoal.**
+O Big Cube Solver ("o app") é desenvolvido pela equipe do Big Cube Solver. Esta política explica o que o app faz com as suas informações. Em resumo: **o app não coleta, não armazena em nenhum servidor e não compartilha nenhum dado pessoal.**
 
 ## O que o app não faz
 

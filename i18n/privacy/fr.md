@@ -4,7 +4,7 @@
 
 *Ceci est une traduction ; la version anglaise fait foi.*
 
-Big Cube Solver (« l'appli ») est développée par Big Cube Solver. Cette politique explique ce que l'appli fait de vos informations. En bref : **l'appli ne collecte aucune donnée personnelle, n'en stocke aucune sur un serveur et n'en partage aucune.**
+Big Cube Solver (« l'appli ») est développée par l'équipe Big Cube Solver. Cette politique explique ce que l'appli fait de vos informations. En bref : **l'appli ne collecte aucune donnée personnelle, n'en stocke aucune sur un serveur et n'en partage aucune.**
 
 ## Ce que l'appli ne fait pas
 

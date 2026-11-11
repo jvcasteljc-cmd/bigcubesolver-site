@@ -4,7 +4,7 @@
 
 *To jest tłumaczenie; wiążąca jest wersja angielska.*
 
-Big Cube Solver („aplikacja”) jest tworzona przez Big Cube Solver. Ta polityka wyjaśnia, co aplikacja robi z twoimi informacjami. W skrócie: **aplikacja nie zbiera, nie przechowuje na żadnym serwerze i nie udostępnia żadnych danych osobowych.**
+Big Cube Solver („aplikacja”) jest tworzona przez zespół Big Cube Solver. Ta polityka wyjaśnia, co aplikacja robi z twoimi informacjami. W skrócie: **aplikacja nie zbiera, nie przechowuje na żadnym serwerze i nie udostępnia żadnych danych osobowych.**
 
 ## Czego aplikacja nie robi
 
