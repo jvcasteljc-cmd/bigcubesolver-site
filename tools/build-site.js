@@ -47,7 +47,7 @@ function header(page) {
   const links = NAV.map(([id, href]) => `<a href="${href}"${id === page ? ' aria-current="page"' : ''}>${all('nav.' + id)}</a>`).join('');
   const codes = LANGS.map(([c]) => `<span data-lang="${c}">${c.toUpperCase()}</span>`).join('');
   const items = LANGS.map(([c, name], i) =>
-    (i === 2 ? '<hr>' : '') + `<button type="button" role="option" data-set="${c}" lang="${c}">${name}</button>`).join('');
+    (i === 2 ? '<hr>' : '') + `<button type="button" role="option" data-set="${c}" lang="${c}"><img class="flag" src="/img/flags/${c}.svg" alt="" width="20" height="15">${name}</button>`).join('');
   return `<header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32"><span>Big Cube Solver</span></a>
