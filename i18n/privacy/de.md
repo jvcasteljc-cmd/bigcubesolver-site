@@ -1,6 +1,6 @@
 # Big Cube Solver — Datenschutzerklärung
 
-*Gültig ab: 6. November 2026*
+*Gültig ab: 14. November 2026*
 
 *Dies ist eine Übersetzung; maßgeblich ist die englische Fassung.*
 
@@ -40,6 +40,26 @@ Ein Muster, das du teilst, ist ein Link (bigcubesolver.com/p?...), der nur die G
 ## Auf deinem Handy gespeicherte Informationen
 
 Die App speichert ihre Einstellungen, den letzten Würfel jeder Größe, ihre Lösungstabellen und, falls die App einmal abstürzt, einen kurzen lokalen Fehlerhinweis, der dir beim nächsten Start angezeigt wird. All das bleibt auf deinem Handy und wird beim Deinstallieren der App entfernt.
+
+## Wenn du uns kontaktierst
+
+Du kannst uns per E-Mail schreiben (support@bigcubesolver.com oder
+privacy@bigcubesolver.com), über das Feedback-Formular für Tester, auf unserem
+Discord-Server oder mit *Für die Website vorschlagen*: Das öffnet deine eigene
+E-Mail-App mit einer fertigen Nachricht zu einem deiner Muster, die du nur
+noch absendest. In jedem Fall entscheidest du, was du schickst, und es läuft
+über diesen Dienst (deinen E-Mail-Anbieter, Google Forms oder Discord) – nie
+über die App.
+
+- Wir verwenden, was du schickst, nur, um dir zu antworten und die App zu
+  verbessern; ein vorgeschlagenes Muster nur, um es für die Mustergalerie der
+  Website zu prüfen.
+- Das Feedback-Formular fragt nichts ab, was dich identifiziert. Eine
+  E-Mail-Adresse (für eine Antwort) und ein Name oder Spitzname (für die
+  Danke-Seite der App) sind freiwillig, und ein Name wird nur gezeigt, wenn du
+  ihn dafür angibst.
+- Wir verkaufen oder teilen nie, was du schickst. Zum Löschen schreib an
+  privacy@bigcubesolver.com.
 
 ## Kinder
 

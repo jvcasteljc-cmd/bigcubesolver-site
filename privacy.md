@@ -2,7 +2,7 @@
 
 (Published at https://bigcubesolver.com/privacy)
 
-*Effective date: 6 November 2026*
+*Effective date: 14 November 2026*
 
 Big Cube Solver ("the app") is developed by the Big Cube Solver team. This policy
 explains what the app does with your information. The short answer: **the app
@@ -69,6 +69,23 @@ if the app ever crashes, a short local error note shown to you at the next
 launch. All of this stays on your phone and is removed when you uninstall the
 app.
 
+## If you contact us
+
+You can write to us by email (support@bigcubesolver.com or
+privacy@bigcubesolver.com), through the testers' feedback form, on our Discord
+server, or with *Suggest for the website*, which opens your own email app with
+a message about one of your patterns, ready for you to send. In every case you
+decide what to send, and it travels through that service (your email
+provider, Google Forms or Discord) - never through the app.
+
+- We use what you send only to answer you and to improve the app; a pattern
+  you suggest is used only to consider it for the website's pattern gallery.
+- The feedback form asks for nothing that identifies you. An email address
+  (to get a reply) and a name or nickname (for the app's thank-you screen) are
+  optional, and a name is shown only if you give it for that purpose.
+- We never sell or share what you send. To have it deleted, write to
+  privacy@bigcubesolver.com.
+
 ## Children
 
 The app is suitable for all ages and collects no personal data from anyone,
@@ -87,7 +104,7 @@ Questions about this policy: privacy@bigcubesolver.com
 
 # Big Cube Solver — Política de privacidad
 
-*Fecha de entrada en vigor: 6 de noviembre de 2026*
+*Fecha de entrada en vigor: 14 de noviembre de 2026*
 
 Big Cube Solver ("la app") ha sido desarrollada por Big Cube Solver. Esta
 política explica qué hace la app con tu información. En resumen: **la app no
@@ -156,6 +173,25 @@ La app guarda sus ajustes, el último cubo de cada tamaño, sus tablas de
 resolución y, si alguna vez se cierra por un error, una breve nota local que se
 te muestra en el siguiente inicio. Todo esto se queda en tu teléfono y se borra
 al desinstalar la app.
+
+## Si nos contactas
+
+Puedes escribirnos por correo (support@bigcubesolver.com o
+privacy@bigcubesolver.com), con el formulario de comentarios de los testers, en
+nuestro servidor de Discord, o con *Sugerir para el sitio web*, que abre tu
+propia app de correo con un mensaje sobre uno de tus patrones, listo para que
+lo envíes. En todos los casos tú decides qué envías, y viaja por ese servicio
+(tu proveedor de correo, Google Forms o Discord), nunca a través de la app.
+
+- Usamos lo que nos envías solo para responderte y mejorar la app; un patrón
+  que sugieres solo se usa para considerarlo para la galería de patrones del
+  sitio web.
+- El formulario de comentarios no pide nada que te identifique. Un correo
+  (para recibir respuesta) y un nombre o apodo (para la pantalla de
+  agradecimientos de la app) son opcionales, y un nombre solo se muestra si lo
+  das con ese fin.
+- Nunca vendemos ni compartimos lo que nos envías. Para que lo borremos,
+  escribe a privacy@bigcubesolver.com.
 
 ## Menores
 

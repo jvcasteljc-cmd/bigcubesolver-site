@@ -1,6 +1,6 @@
 # Big Cube Solver — Política de privacidade
 
-*Data de vigência: 6 de novembro de 2026*
+*Data de vigência: 14 de novembro de 2026*
 
 *Esta é uma tradução; a versão em inglês é a de referência.*
 
@@ -40,6 +40,23 @@ Um padrão que você compartilha é um link (bigcubesolver.com/p?...) que conté
 ## Informações guardadas no seu celular
 
 O app guarda as configurações, o último cubo de cada tamanho, as tabelas dos solucionadores e, se o app travar, uma breve nota local de erro mostrada a você na próxima abertura. Tudo isso fica no seu celular e é removido quando você desinstala o app.
+
+## Se você entrar em contato
+
+Você pode nos escrever por e-mail (support@bigcubesolver.com ou
+privacy@bigcubesolver.com), pelo formulário de comentários dos testers, no
+nosso servidor do Discord ou com *Sugerir para o site*, que abre o seu próprio
+app de e-mail com uma mensagem sobre um dos seus padrões, pronta para você
+enviar. Em todos os casos você decide o que envia, e isso passa por esse
+serviço (seu provedor de e-mail, Google Forms ou Discord), nunca pelo app.
+
+- Usamos o que você envia só para responder e melhorar o app; um padrão que
+  você sugere só é usado para considerá-lo para a galeria de padrões do site.
+- O formulário de comentários não pede nada que identifique você. Um e-mail
+  (para receber resposta) e um nome ou apelido (para a tela de agradecimentos
+  do app) são opcionais, e um nome só aparece se você o informar para isso.
+- Nunca vendemos nem compartilhamos o que você envia. Para que seja apagado,
+  escreva para privacy@bigcubesolver.com.
 
 ## Crianças
 

@@ -1,6 +1,6 @@
 # Big Cube Solver — Polityka prywatności
 
-*Data wejścia w życie: 6 listopada 2026 r.*
+*Data wejścia w życie: 14 listopada 2026 r.*
 
 *To jest tłumaczenie; wiążąca jest wersja angielska.*
 
@@ -40,6 +40,24 @@ Wzór, który udostępniasz, to link (bigcubesolver.com/p?...) zawierający tylk
 ## Informacje przechowywane na telefonie
 
 Aplikacja przechowuje swoje ustawienia, ostatnią kostkę każdego rozmiaru, tabele algorytmów oraz, jeśli aplikacja kiedyś ulegnie awarii, krótką lokalną notatkę o błędzie pokazywaną ci przy następnym uruchomieniu. Wszystko to pozostaje na twoim telefonie i jest usuwane po odinstalowaniu aplikacji.
+
+## Jeśli się z nami kontaktujesz
+
+Możesz napisać do nas e-mailem (support@bigcubesolver.com lub
+privacy@bigcubesolver.com), przez formularz opinii dla testerów, na naszym
+serwerze Discord albo przez *Zaproponuj na stronę*, które otwiera Twoją
+aplikację pocztową z gotową wiadomością o jednym z Twoich wzorów do wysłania.
+Zawsze to Ty decydujesz, co wysyłasz, a trafia to przez daną usługę (Twojego
+dostawcę poczty, Google Forms lub Discord) - nigdy przez aplikację.
+
+- To, co wysyłasz, wykorzystujemy tylko do odpowiedzi i ulepszania aplikacji;
+  zaproponowany wzór - tylko do rozważenia go do galerii wzorów na stronie.
+- Formularz opinii nie prosi o nic, co Cię identyfikuje. Adres e-mail (aby
+  dostać odpowiedź) oraz imię lub pseudonim (do ekranu podziękowań w
+  aplikacji) są opcjonalne, a imię pokazujemy tylko wtedy, gdy podasz je w tym
+  celu.
+- Nigdy nie sprzedajemy ani nie udostępniamy tego, co wysyłasz. Aby to
+  usunąć, napisz na privacy@bigcubesolver.com.
 
 ## Dzieci
 

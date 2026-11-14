@@ -1,6 +1,6 @@
 # Big Cube Solver — Gizlilik Politikası
 
-*Yürürlük tarihi: 6 Kasım 2026*
+*Yürürlük tarihi: 14 Kasım 2026*
 
 *Bu bir çeviridir; esas alınan metin İngilizce sürümdür.*
 
@@ -40,6 +40,25 @@ Paylaştığınız bir desen, yalnızca desenin boyutunu, adını ve hamlelerini
 ## Telefonunuzda tutulan bilgiler
 
 Uygulama ayarlarını, her boyutun son küpünü, çözücü tablolarını ve uygulama çökerse bir sonraki açılışta size gösterilen kısa bir yerel hata notunu saklar. Bunların hepsi telefonunuzda kalır ve uygulamayı kaldırdığınızda silinir.
+
+## Bizimle iletişime geçersen
+
+Bize e-postayla (support@bigcubesolver.com veya privacy@bigcubesolver.com),
+test kullanıcılarının geri bildirim formuyla, Discord sunucumuzda ya da *Web
+sitesi için öner* ile yazabilirsin; bu seçenek, desenlerinden biri hakkında
+hazır bir mesajla kendi e-posta uygulamanı açar, göndermek sana kalır. Her
+durumda neyi göndereceğine sen karar verirsin ve o, ilgili hizmet (e-posta
+sağlayıcın, Google Forms veya Discord) üzerinden gider - asla uygulama
+üzerinden değil.
+
+- Gönderdiklerini yalnızca sana yanıt vermek ve uygulamayı geliştirmek için
+  kullanırız; önerdiğin bir deseni yalnızca sitenin desen galerisi için
+  değerlendirmekte kullanırız.
+- Geri bildirim formu seni tanımlayan hiçbir şey istemez. E-posta adresi
+  (yanıt almak için) ve ad veya takma ad (uygulamanın teşekkür ekranı için)
+  isteğe bağlıdır; ad yalnızca bu amaçla verirsen gösterilir.
+- Gönderdiklerini asla satmaz veya paylaşmayız. Silinmesi için
+  privacy@bigcubesolver.com adresine yaz.
 
 ## Çocuklar
 

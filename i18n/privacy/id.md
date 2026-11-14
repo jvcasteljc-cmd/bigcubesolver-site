@@ -1,6 +1,6 @@
 # Big Cube Solver — Kebijakan Privasi
 
-*Tanggal berlaku: 6 November 2026*
+*Tanggal berlaku: 14 November 2026*
 
 *Ini adalah terjemahan; versi bahasa Inggris yang menjadi acuan.*
 
@@ -40,6 +40,26 @@ Pola yang Anda bagikan adalah tautan (bigcubesolver.com/p?...) yang hanya berisi
 ## Informasi yang disimpan di ponsel Anda
 
 Aplikasi menyimpan setelannya, kubus terakhir dari setiap ukuran, tabel pemecahnya, dan, jika aplikasi pernah mogok, catatan kesalahan lokal singkat yang ditampilkan kepada Anda saat aplikasi dibuka berikutnya. Semua ini tetap di ponsel Anda dan dihapus saat Anda mencopot aplikasi.
+
+## Jika Anda menghubungi kami
+
+Anda dapat menulis kepada kami lewat email (support@bigcubesolver.com atau
+privacy@bigcubesolver.com), formulir masukan untuk penguji, server Discord
+kami, atau *Usulkan untuk situs web*, yang membuka aplikasi email Anda sendiri
+dengan pesan tentang salah satu pola Anda, siap Anda kirim. Dalam semua kasus
+Anda yang memutuskan apa yang dikirim, dan itu melewati layanan tersebut
+(penyedia email Anda, Google Forms, atau Discord) - tidak pernah melalui
+aplikasi.
+
+- Kami memakai apa yang Anda kirim hanya untuk membalas dan meningkatkan
+  aplikasi; pola yang Anda usulkan hanya dipakai untuk mempertimbangkannya bagi
+  galeri pola di situs web.
+- Formulir masukan tidak meminta apa pun yang mengidentifikasi Anda. Alamat
+  email (untuk mendapat balasan) serta nama atau julukan (untuk layar terima
+  kasih di aplikasi) bersifat opsional, dan nama hanya ditampilkan jika Anda
+  memberikannya untuk tujuan itu.
+- Kami tidak pernah menjual atau membagikan apa yang Anda kirim. Untuk
+  menghapusnya, tulis ke privacy@bigcubesolver.com.
 
 ## Anak-anak
 
