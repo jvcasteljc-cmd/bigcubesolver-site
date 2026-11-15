@@ -1,6 +1,6 @@
 # Big Cube Solver — Datenschutzerklärung
 
-*Gültig ab: 14. November 2026*
+*Gültig ab: 15. November 2026*
 
 *Dies ist eine Übersetzung; maßgeblich ist die englische Fassung.*
 
@@ -28,6 +28,10 @@ Wenn du einen Bluetooth-Smart-Cube verbindest, fragt die App nach der Berechtigu
 ## Käufe
 
 Die kostenlose Version erfordert keinen Kauf. Wenn du ein Upgrade kaufst, wird die Zahlung vollständig von Google Play nach Googles eigener Datenschutzerklärung abgewickelt; die App erfährt nur, ob das Upgrade gekauft wurde. Der Entwickler erhält keine Zahlungsdaten.
+
+## Updates
+
+Um Updates anzubieten, fragt die App die Google Play Store-App auf deinem Handy, ob es eine neuere Version von Big Cube Solver gibt. Nur diese Frage geht an Google Play, nach Googles eigener Datenschutzerklärung; sie enthält nichts über dich oder deine Nutzung der App. Wenn du aktualisierst, lädt Google Play die neue Version herunter und installiert sie.
 
 ## Dateien, die du speicherst
 

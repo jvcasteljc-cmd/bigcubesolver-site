@@ -1,6 +1,6 @@
 # Big Cube Solver — Kebijakan Privasi
 
-*Tanggal berlaku: 14 November 2026*
+*Tanggal berlaku: 15 November 2026*
 
 *Ini adalah terjemahan; versi bahasa Inggris yang menjadi acuan.*
 
@@ -28,6 +28,10 @@ Jika Anda menyambungkan kubus pintar Bluetooth, aplikasi meminta izin *Perangkat
 ## Pembelian
 
 Versi gratis tidak memerlukan pembelian. Jika Anda membeli peningkatan, pembayaran sepenuhnya ditangani oleh Google Play berdasarkan kebijakan privasi Google sendiri; aplikasi hanya mengetahui apakah peningkatan sudah dibeli. Pengembang tidak menerima detail pembayaran apa pun.
+
+## Pembaruan
+
+Untuk menawarkan pembaruan, aplikasi bertanya kepada aplikasi Google Play Store di ponsel Anda apakah ada versi Big Cube Solver yang lebih baru. Hanya pertanyaan itu yang dikirim ke Google Play, di bawah kebijakan privasi Google sendiri; isinya tidak menyangkut Anda atau cara Anda memakai aplikasi. Jika Anda memilih memperbarui, Google Play mengunduh dan memasangnya.
 
 ## File yang Anda pilih untuk disimpan
 

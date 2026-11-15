@@ -1,6 +1,6 @@
 # Big Cube Solver — Gizlilik Politikası
 
-*Yürürlük tarihi: 14 Kasım 2026*
+*Yürürlük tarihi: 15 Kasım 2026*
 
 *Bu bir çeviridir; esas alınan metin İngilizce sürümdür.*
 
@@ -28,6 +28,10 @@ Bir Bluetooth akıllı küp bağlarsanız uygulama *Yakındaki cihazlar* iznini 
 ## Satın almalar
 
 Ücretsiz sürüm satın alma gerektirmez. Bir yükseltme satın alırsanız ödeme tamamen Google Play tarafından, Google'ın kendi gizlilik politikasına göre işlenir; uygulama yalnızca yükseltmenin satın alınıp alınmadığını öğrenir. Geliştirici hiçbir ödeme bilgisi almaz.
+
+## Güncellemeler
+
+Güncelleme sunabilmek için uygulama, telefonundaki Google Play Store uygulamasına Big Cube Solver'ın daha yeni bir sürümü olup olmadığını sorar. Google Play'e yalnızca bu soru gider ve Google'ın kendi gizlilik politikasına tabidir; içinde sen veya uygulamayı nasıl kullandığın hakkında hiçbir şey yoktur. Güncellemeyi seçersen Google Play yeni sürümü indirir ve kurar.
 
 ## Kaydetmeyi seçtiğiniz dosyalar
 

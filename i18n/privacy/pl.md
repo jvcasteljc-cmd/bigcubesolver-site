@@ -1,6 +1,6 @@
 # Big Cube Solver — Polityka prywatności
 
-*Data wejścia w życie: 14 listopada 2026 r.*
+*Data wejścia w życie: 15 listopada 2026 r.*
 
 *To jest tłumaczenie; wiążąca jest wersja angielska.*
 
@@ -28,6 +28,10 @@ Jeśli połączysz smart kostkę Bluetooth, aplikacja poprosi o uprawnienie *Urz
 ## Zakupy
 
 Wersja darmowa nie wymaga zakupu. Jeśli kupisz rozszerzenie, płatność w całości obsługuje Google Play zgodnie z polityką prywatności Google; aplikacja dowiaduje się jedynie, czy rozszerzenie zostało kupione. Twórca nie otrzymuje żadnych danych płatniczych.
+
+## Aktualizacje
+
+Aby proponować aktualizacje, aplikacja pyta aplikację Sklep Google Play na Twoim telefonie, czy istnieje nowsza wersja Big Cube Solver. Do Google Play trafia tylko to pytanie, zgodnie z polityką prywatności Google; nie zawiera nic o Tobie ani o tym, jak korzystasz z aplikacji. Jeśli zdecydujesz się zaktualizować, Google Play pobierze i zainstaluje nową wersję.
 
 ## Pliki, które zapisujesz
 

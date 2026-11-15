@@ -1,6 +1,6 @@
 # Big Cube Solver — Politique de confidentialité
 
-*Date d'entrée en vigueur : 14 novembre 2026*
+*Date d'entrée en vigueur : 15 novembre 2026*
 
 *Ceci est une traduction ; la version anglaise fait foi.*
 
@@ -28,6 +28,10 @@ Si vous connectez un cube connecté Bluetooth, l'appli demande l'autorisation *A
 ## Achats
 
 La version gratuite ne nécessite aucun achat. Si vous achetez une mise à niveau, le paiement est entièrement géré par Google Play selon la politique de confidentialité de Google ; l'appli apprend seulement si la mise à niveau a été achetée. Le développeur ne reçoit aucune donnée de paiement.
+
+## Mises à jour
+
+Pour proposer des mises à jour, l’application demande à l’application Google Play Store de votre téléphone s’il existe une version plus récente de Big Cube Solver. Seule cette question va à Google Play, sous la politique de confidentialité de Google ; elle ne contient rien sur vous ni sur votre utilisation de l’application. Si vous choisissez de mettre à jour, Google Play la télécharge et l’installe.
 
 ## Fichiers que vous choisissez d'enregistrer
 

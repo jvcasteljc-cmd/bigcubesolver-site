@@ -2,7 +2,7 @@
 
 (Published at https://bigcubesolver.com/privacy)
 
-*Effective date: 14 November 2026*
+*Effective date: 15 November 2026*
 
 Big Cube Solver ("the app") is developed by the Big Cube Solver team. This policy
 explains what the app does with your information. The short answer: **the app
@@ -46,6 +46,10 @@ The free version needs no purchase. If you buy an upgrade, the payment is
 handled entirely by Google Play under Google's own privacy policy; the app
 only learns whether the upgrade is bought. The developer receives no payment
 details.
+
+## Updates
+
+To offer updates, the app asks the Google Play Store app on your phone whether a newer version of Big Cube Solver exists. Only that question goes to Google Play, under Google's own privacy policy; it carries nothing about you or how you use the app. If you choose to update, Google Play downloads and installs it.
 
 ## Files you choose to save
 
@@ -104,7 +108,7 @@ Questions about this policy: privacy@bigcubesolver.com
 
 # Big Cube Solver — Política de privacidad
 
-*Fecha de entrada en vigor: 14 de noviembre de 2026*
+*Fecha de entrada en vigor: 15 de noviembre de 2026*
 
 Big Cube Solver ("la app") ha sido desarrollada por Big Cube Solver. Esta
 política explica qué hace la app con tu información. En resumen: **la app no
@@ -149,6 +153,10 @@ La versión gratuita no necesita ninguna compra. Si compras una mejora, el pago
 lo gestiona por completo Google Play, bajo su propia política de privacidad; la
 app solo sabe si la mejora está comprada. El desarrollador no recibe ningún
 dato de pago.
+
+## Actualizaciones
+
+Para ofrecerte actualizaciones, la app pregunta a la app Google Play Store de tu teléfono si existe una versión más nueva de Big Cube Solver. Solo esa pregunta va a Google Play, bajo la propia política de privacidad de Google; no lleva nada sobre ti ni sobre cómo usas la app. Si decides actualizar, Google Play la descarga e instala.
 
 ## Archivos que decides guardar
 
