@@ -126,7 +126,7 @@
 "test.try": "What to try",
 "test.snags": "Common snags",
 "test.q1.h": "\"Not found\" or \"not available\"",
-"test.q1.d": "Right after step 2 this is normal: Google Play can need a few hours. Try again later in the Play Store app, not in the browser. If it still does not appear, the phone uses a different Google account than the one that joined the group: in the Play Store tap your picture, switch to that account and search again.",
+"test.q1.d": "Right after step 2 this is normal: Google Play can need a few hours. Try again later in the Play Store app, not in the browser. If it still does not appear, the phone uses a different Google account than the one that joined the group: in the Play Store tap your picture, switch to that account and search again. Restarting the phone often makes it appear right away.",
 "test.q2.h": "I have an iPhone",
 "test.q2.d": "For now the app is Android only.",
 "test.q3.h": "Is it free? Does it collect data?",

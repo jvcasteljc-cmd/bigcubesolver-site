@@ -126,7 +126,7 @@
 "test.try": "O que testar",
 "test.snags": "Problemas comuns",
 "test.q1.h": "\"Não encontrado\" ou \"não disponível\"",
-"test.q1.d": "Logo depois do passo 2 isso é normal: o Google Play pode precisar de algumas horas. Tente de novo mais tarde no app da Play Store, não no navegador. Se ainda não aparecer, o telefone está usando outra conta do Google, diferente da que entrou no grupo: na Play Store toque na sua foto, mude para essa conta e procure de novo.",
+"test.q1.d": "Logo depois do passo 2 isso é normal: o Google Play pode precisar de algumas horas. Tente de novo mais tarde no app da Play Store, não no navegador. Se ainda não aparecer, o telefone está usando outra conta do Google, diferente da que entrou no grupo: na Play Store toque na sua foto, mude para essa conta e procure de novo. Reiniciar o telefone costuma fazer o app aparecer na hora.",
 "test.q2.h": "Tenho iPhone",
 "test.q2.d": "Por enquanto o app é só para Android.",
 "test.q3.h": "É grátis? Coleta dados?",

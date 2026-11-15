@@ -126,7 +126,7 @@
 "test.try": "Co wypróbować",
 "test.snags": "Częste problemy",
 "test.q1.h": "„Nie znaleziono” lub „niedostępna”",
-"test.q1.d": "Tuż po kroku 2 to normalne: Google Play może potrzebować kilku godzin. Spróbuj później w aplikacji Sklep Play, nie w przeglądarce. Jeśli nadal się nie pojawia, telefon używa innego konta Google niż to, które dołączyło do grupy: w Sklepie Play dotknij swojego zdjęcia, przełącz się na to konto i wyszukaj ponownie.",
+"test.q1.d": "Tuż po kroku 2 to normalne: Google Play może potrzebować kilku godzin. Spróbuj później w aplikacji Sklep Play, nie w przeglądarce. Jeśli nadal się nie pojawia, telefon używa innego konta Google niż to, które dołączyło do grupy: w Sklepie Play dotknij swojego zdjęcia, przełącz się na to konto i wyszukaj ponownie. Ponowne uruchomienie telefonu często sprawia, że pojawia się od razu.",
 "test.q2.h": "Mam iPhone'a",
 "test.q2.d": "Na razie aplikacja jest tylko na Androida.",
 "test.q3.h": "Czy jest darmowa? Czy zbiera dane?",

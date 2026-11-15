@@ -126,7 +126,7 @@
 "test.try": "Neler denenmeli",
 "test.snags": "Sık karşılaşılan sorunlar",
 "test.q1.h": "\"Bulunamadı\" veya \"kullanılamıyor\"",
-"test.q1.d": "2. adımdan hemen sonra bu normaldir: Google Play'in birkaç saate ihtiyacı olabilir. Daha sonra tarayıcıda değil, Play Store uygulamasında tekrar dene. Hâlâ görünmüyorsa telefon, gruba katılan hesaptan farklı bir Google hesabı kullanıyordur: Play Store'da fotoğrafına dokun, o hesaba geç ve yeniden ara.",
+"test.q1.d": "2. adımdan hemen sonra bu normaldir: Google Play'in birkaç saate ihtiyacı olabilir. Daha sonra tarayıcıda değil, Play Store uygulamasında tekrar dene. Hâlâ görünmüyorsa telefon, gruba katılan hesaptan farklı bir Google hesabı kullanıyordur: Play Store'da fotoğrafına dokun, o hesaba geç ve yeniden ara. Telefonu yeniden başlatmak çoğu zaman uygulamanın hemen görünmesini sağlar.",
 "test.q2.h": "iPhone'um var",
 "test.q2.d": "Şimdilik uygulama yalnızca Android için.",
 "test.q3.h": "Ücretsiz mi? Veri topluyor mu?",

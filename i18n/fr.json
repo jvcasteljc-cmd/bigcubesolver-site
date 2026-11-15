@@ -126,7 +126,7 @@
 "test.try": "Que tester",
 "test.snags": "Problèmes fréquents",
 "test.q1.h": "« Introuvable » ou « non disponible »",
-"test.q1.d": "Juste après l’étape 2, c’est normal : Google Play peut avoir besoin de quelques heures. Réessayez plus tard dans l’application Play Store, pas dans le navigateur. Si elle n’apparaît toujours pas, le téléphone utilise un autre compte Google que celui qui a rejoint le groupe : dans le Play Store, touchez votre photo, passez sur ce compte et cherchez à nouveau.",
+"test.q1.d": "Juste après l’étape 2, c’est normal : Google Play peut avoir besoin de quelques heures. Réessayez plus tard dans l’application Play Store, pas dans le navigateur. Si elle n’apparaît toujours pas, le téléphone utilise un autre compte Google que celui qui a rejoint le groupe : dans le Play Store, touchez votre photo, passez sur ce compte et cherchez à nouveau. Redémarrer le téléphone la fait souvent apparaître aussitôt.",
 "test.q2.h": "J'ai un iPhone",
 "test.q2.d": "Pour l'instant, l'appli est uniquement sur Android.",
 "test.q3.h": "Est-ce gratuit ? Collecte-t-elle des données ?",
