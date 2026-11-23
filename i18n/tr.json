@@ -117,7 +117,7 @@
 "test.s2.d": "<b>Test kullanıcısı ol</b>'a dokunun. Kullanılamıyor derse, 1. adımdan sonra birkaç dakika bekleyip tekrar deneyin.",
 "test.s2.b": "Test kullanıcısı ol",
 "test.s3.h": "Uygulamayı yükleyin",
-"test.s3.d": "<b>Play Store uygulamasını</b> aç, <b>Big Cube Solver</b> ara ve yükle. 2. adımdan sonra Google Play'in uygulamayı sana göstermesi birkaç saat sürebilir: henüz yoksa daha sonra tekrar dene. Güncellemeler kendiliğinden gelir.",
+"test.s3.d": "2. adımdan sonra aynı sayfada <b>Google Play'den indir</b>'e dokun: uygulama Play Store'da açılır. (Test süresince uygulama Play Store aramalarında görünmez.) Google Play kullanılamıyor derse biraz bekle: 2. adımdan sonra birkaç saat sürebilir; telefonu yeniden başlatmak çoğu zaman işe yarar. Güncellemeler kendiliğinden gelir.",
 "test.s3.b": "Google Play'de aç",
 "test.ask": "<b>Önemli bir rica:</b> uygulamayı en az <b>14 gün</b> yüklü tutun ve arada bir açın. Google, yayına izin vermeden önce art arda 14 gün boyunca 12 test kullanıcısı ister.",
 "test.tell.h": "Nasıl geçtiğini anlatın",
@@ -126,7 +126,7 @@
 "test.try": "Neler denenmeli",
 "test.snags": "Sık karşılaşılan sorunlar",
 "test.q1.h": "\"Bulunamadı\" veya \"kullanılamıyor\"",
-"test.q1.d": "2. adımdan hemen sonra bu normaldir: Google Play'in birkaç saate ihtiyacı olabilir. Daha sonra tarayıcıda değil, Play Store uygulamasında tekrar dene. Hâlâ görünmüyorsa telefon, gruba katılan hesaptan farklı bir Google hesabı kullanıyordur: Play Store'da fotoğrafına dokun, o hesaba geç ve yeniden ara. Telefonu yeniden başlatmak çoğu zaman uygulamanın hemen görünmesini sağlar.",
+"test.q1.d": "2. adımdan hemen sonra bu normaldir: Google Play'in birkaç saate ihtiyacı olabilir. Uygulamayı test sayfasındaki bağlantıdan aç (test süresince aramada görünmez). Hâlâ kullanılamıyorsa telefon, gruba katılan hesaptan farklı bir Google hesabı kullanıyordur: Play Store'da fotoğrafına dokun, o hesaba geç ve bağlantıyı yeniden aç. Telefonu yeniden başlatmak çoğu zaman uygulamanın hemen görünmesini sağlar.",
 "test.q2.h": "iPhone'um var",
 "test.q2.d": "Şimdilik uygulama yalnızca Android için.",
 "test.q3.h": "Ücretsiz mi? Veri topluyor mu?",
@@ -252,5 +252,5 @@
 "acc.h1": "Test erişimi",
 "acc.d": "Zaten test grubunda olanlar için. Bağlantıyı Play Store'da kullandığın <b>aynı Google hesabıyla</b> aç ve <b>Test kullanıcısı ol</b>'a dokun.",
 "acc.b": "Test kullanıcısı ol",
-"acc.after": "Sonra <b>Play Store uygulamasını</b> aç ve <b>Big Cube Solver</b>'ı ara. Görünmesi birkaç saat sürebilir; telefonu yeniden başlatmak çoğu zaman işe yarar."
+"acc.after": "Sonra açılan sayfada <b>Google Play'den indir</b>'e dokun. Test süresince uygulama Play Store aramalarında görünmez, yalnızca bu bağlantıyla açılır. Kullanılabilir olması birkaç saat sürebilir; telefonu yeniden başlatmak çoğu zaman işe yarar."
 }

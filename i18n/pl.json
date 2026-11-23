@@ -117,7 +117,7 @@
 "test.s2.d": "Dotknij <b>Zostań testerem</b>. Jeśli pojawi się informacja, że to niedostępne, odczekaj kilka minut po kroku 1 i spróbuj ponownie.",
 "test.s2.b": "Zostań testerem",
 "test.s3.h": "Zainstaluj aplikację",
-"test.s3.d": "Otwórz <b>aplikację Sklep Play</b>, wyszukaj <b>Big Cube Solver</b> i zainstaluj. Po kroku 2 Google Play może potrzebować kilku godzin, zanim pokaże Ci aplikację: jeśli jej jeszcze nie ma, spróbuj później. Aktualizacje przychodzą same.",
+"test.s3.d": "Po kroku 2 dotknij na tej samej stronie <b>pobierz z Google Play</b>: aplikacja otworzy się w Sklepie Play. (W czasie testu aplikacja nie pojawia się w wyszukiwaniu Sklepu Play.) Jeśli Google Play pisze, że jest niedostępna, poczekaj: po kroku 2 może to potrwać kilka godzin; ponowne uruchomienie telefonu często pomaga. Aktualizacje przychodzą same.",
 "test.s3.b": "Otwórz w Google Play",
 "test.ask": "<b>Ważna prośba:</b> nie odinstalowuj aplikacji przez co najmniej <b>14 dni</b> i od czasu do czasu ją otwieraj. Google wymaga 12 testerów przez 14 dni z rzędu, zanim pozwoli na publikację.",
 "test.tell.h": "Opowiedz, jak poszło",
@@ -126,7 +126,7 @@
 "test.try": "Co wypróbować",
 "test.snags": "Częste problemy",
 "test.q1.h": "„Nie znaleziono” lub „niedostępna”",
-"test.q1.d": "Tuż po kroku 2 to normalne: Google Play może potrzebować kilku godzin. Spróbuj później w aplikacji Sklep Play, nie w przeglądarce. Jeśli nadal się nie pojawia, telefon używa innego konta Google niż to, które dołączyło do grupy: w Sklepie Play dotknij swojego zdjęcia, przełącz się na to konto i wyszukaj ponownie. Ponowne uruchomienie telefonu często sprawia, że pojawia się od razu.",
+"test.q1.d": "Tuż po kroku 2 to normalne: Google Play może potrzebować kilku godzin. Otwórz aplikację z linku na stronie testu (w czasie testu nie ma jej w wyszukiwaniu). Jeśli nadal jest niedostępna, telefon używa innego konta Google niż to, które dołączyło do grupy: w Sklepie Play dotknij swojego zdjęcia, przełącz się na to konto i otwórz link ponownie. Ponowne uruchomienie telefonu często sprawia, że pojawia się od razu.",
 "test.q2.h": "Mam iPhone'a",
 "test.q2.d": "Na razie aplikacja jest tylko na Androida.",
 "test.q3.h": "Czy jest darmowa? Czy zbiera dane?",
@@ -252,5 +252,5 @@
 "acc.h1": "Dostęp dla testerów",
 "acc.d": "Dla testerów, którzy są już w grupie. Otwórz link na <b>tym samym koncie Google</b>, którego używasz w Sklepie Play, i dotknij <b>Zostań testerem</b>.",
 "acc.b": "Zostań testerem",
-"acc.after": "Potem otwórz <b>aplikację Sklep Play</b> i wyszukaj <b>Big Cube Solver</b>. Może pojawić się dopiero po kilku godzinach; ponowne uruchomienie telefonu często pomaga."
+"acc.after": "Potem na stronie, która się otworzy, dotknij <b>pobierz z Google Play</b>. W czasie testu aplikacja nie pojawia się w wyszukiwaniu Sklepu Play, tylko przez ten link. Może być dostępna dopiero po kilku godzinach; ponowne uruchomienie telefonu często pomaga."
 }

@@ -117,7 +117,7 @@
 "test.s2.d": "Tocca <b>Diventa un tester</b>. Se dice che non è disponibile, aspetta qualche minuto dopo il passaggio 1 e riprova.",
 "test.s2.b": "Diventa tester",
 "test.s3.h": "Installa l'app",
-"test.s3.d": "Apri l’<b>app Play Store</b>, cerca <b>Big Cube Solver</b> e installala. Google Play può impiegare alcune ore dopo il passo 2 per mostrarti l’app: se non c’è ancora, riprova più tardi. Gli aggiornamenti arrivano da soli.",
+"test.s3.d": "Dopo il passo 2, tocca <b>scaricala su Google Play</b> nella stessa pagina: l’app si apre nel Play Store. (Durante il test l’app non compare nelle ricerche del Play Store.) Se Google Play dice che non è disponibile, aspetta un po’: possono volerci alcune ore dopo il passo 2; riavviare il telefono spesso aiuta. Gli aggiornamenti arrivano da soli.",
 "test.s3.b": "Apri in Google Play",
 "test.ask": "<b>Un favore importante:</b> tieni l'app installata per almeno <b>14 giorni</b> e aprila ogni tanto. Google richiede 12 tester per 14 giorni consecutivi prima di consentire la pubblicazione.",
 "test.tell.h": "Raccontaci com'è andata",
@@ -126,7 +126,7 @@
 "test.try": "Cosa provare",
 "test.snags": "Problemi frequenti",
 "test.q1.h": "\"Non trovata\" o \"non disponibile\"",
-"test.q1.d": "Subito dopo il passo 2 è normale: Google Play può aver bisogno di alcune ore. Riprova più tardi nell’app Play Store, non nel browser. Se ancora non compare, il telefono usa un account Google diverso da quello che si è unito al gruppo: nel Play Store tocca la tua foto, passa a quell’account e cerca di nuovo. Riavviare il telefono spesso la fa comparire subito.",
+"test.q1.d": "Subito dopo il passo 2 è normale: Google Play può aver bisogno di alcune ore. Apri l’app dal link della pagina di test (durante il test non compare nelle ricerche). Se ancora non è disponibile, il telefono usa un account Google diverso da quello che si è unito al gruppo: nel Play Store tocca la tua foto, passa a quell’account e riapri il link. Riavviare il telefono spesso la fa comparire subito.",
 "test.q2.h": "Ho un iPhone",
 "test.q2.d": "Per ora l'app è solo per Android.",
 "test.q3.h": "È gratis? Raccoglie dati?",
@@ -252,5 +252,5 @@
 "acc.h1": "Accesso tester",
 "acc.d": "Per i tester già nel gruppo. Apri il link con lo <b>stesso account Google</b> che usi nel Play Store e tocca <b>Diventa tester</b>.",
 "acc.b": "Diventa tester",
-"acc.after": "Poi apri l’<b>app Play Store</b> e cerca <b>Big Cube Solver</b>. Può volerci qualche ora perché compaia; riavviare il telefono spesso aiuta."
+"acc.after": "Poi, nella pagina che si apre, tocca <b>scaricala su Google Play</b>. Durante il test l’app non compare nelle ricerche del Play Store, solo tramite quel link. Possono volerci alcune ore perché sia disponibile; riavviare il telefono spesso aiuta."
 }

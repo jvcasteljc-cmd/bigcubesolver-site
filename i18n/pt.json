@@ -117,7 +117,7 @@
 "test.s2.d": "Toque em <b>Torne-se um testador</b>. Se aparecer que não está disponível, espere alguns minutos depois do passo 1 e tente de novo.",
 "test.s2.b": "Ser testador",
 "test.s3.h": "Instale o app",
-"test.s3.d": "Abra o <b>app da Play Store</b>, procure <b>Big Cube Solver</b> e instale. O Google Play pode levar algumas horas depois do passo 2 para mostrar o app a você: se ainda não aparecer, tente de novo mais tarde. As atualizações chegam sozinhas.",
+"test.s3.d": "Depois do passo 2, toque em <b>fazer o download no Google Play</b> nessa mesma página: o app abre na Play Store. (Durante o teste o app não aparece nas buscas da Play Store.) Se o Google Play disser que não está disponível, espere um pouco: pode levar algumas horas depois do passo 2; reiniciar o telefone costuma ajudar. As atualizações chegam sozinhas.",
 "test.s3.b": "Abrir no Google Play",
 "test.ask": "<b>Um favor importante:</b> mantenha o app instalado por pelo menos <b>14 dias</b> e abra-o de vez em quando. O Google exige 12 testadores por 14 dias seguidos antes de permitir a publicação.",
 "test.tell.h": "Conte como foi",
@@ -126,7 +126,7 @@
 "test.try": "O que testar",
 "test.snags": "Problemas comuns",
 "test.q1.h": "\"Não encontrado\" ou \"não disponível\"",
-"test.q1.d": "Logo depois do passo 2 isso é normal: o Google Play pode precisar de algumas horas. Tente de novo mais tarde no app da Play Store, não no navegador. Se ainda não aparecer, o telefone está usando outra conta do Google, diferente da que entrou no grupo: na Play Store toque na sua foto, mude para essa conta e procure de novo. Reiniciar o telefone costuma fazer o app aparecer na hora.",
+"test.q1.d": "Logo depois do passo 2 isso é normal: o Google Play pode precisar de algumas horas. Abra o app pelo link da página de teste (durante o teste ele não aparece nas buscas). Se ainda não estiver disponível, o telefone está usando outra conta do Google, diferente da que entrou no grupo: na Play Store toque na sua foto, mude para essa conta e abra o link de novo. Reiniciar o telefone costuma fazer o app aparecer na hora.",
 "test.q2.h": "Tenho iPhone",
 "test.q2.d": "Por enquanto o app é só para Android.",
 "test.q3.h": "É grátis? Coleta dados?",
@@ -252,5 +252,5 @@
 "acc.h1": "Acesso para testers",
 "acc.d": "Para testers que já estão no grupo. Abra o link com a <b>mesma conta do Google</b> que você usa na Play Store e toque em <b>Ser testador</b>.",
 "acc.b": "Ser testador",
-"acc.after": "Depois abra o <b>app da Play Store</b> e procure <b>Big Cube Solver</b>. Pode levar algumas horas para aparecer; reiniciar o telefone costuma ajudar."
+"acc.after": "Depois, na página que abrir, toque em <b>fazer o download no Google Play</b>. Durante o teste o app não aparece nas buscas da Play Store, só por esse link. Pode levar algumas horas para ficar disponível; reiniciar o telefone costuma ajudar."
 }

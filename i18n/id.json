@@ -117,7 +117,7 @@
 "test.s2.d": "Ketuk <b>Menjadi penguji</b>. Jika muncul tulisan tidak tersedia, tunggu beberapa menit setelah langkah 1 lalu coba lagi.",
 "test.s2.b": "Menjadi penguji",
 "test.s3.h": "Pasang aplikasinya",
-"test.s3.d": "Buka <b>aplikasi Play Store</b>, cari <b>Big Cube Solver</b>, lalu pasang. Setelah langkah 2, Google Play bisa butuh beberapa jam untuk menampilkan aplikasinya kepada Anda: jika belum ada, coba lagi nanti. Pembaruan datang sendiri.",
+"test.s3.d": "Setelah langkah 2, ketuk <b>download di Google Play</b> di halaman yang sama: aplikasi terbuka di Play Store. (Selama pengujian, aplikasi tidak muncul di pencarian Play Store.) Jika Google Play bilang tidak tersedia, tunggu sebentar: bisa butuh beberapa jam setelah langkah 2; memulai ulang ponsel sering membantu. Pembaruan datang sendiri.",
 "test.s3.b": "Buka di Google Play",
 "test.ask": "<b>Satu permintaan penting:</b> biarkan aplikasi terpasang setidaknya <b>14 hari</b> dan buka sesekali. Google mewajibkan 12 penguji selama 14 hari berturut-turut sebelum mengizinkan publikasi.",
 "test.tell.h": "Ceritakan pengalaman Anda",
@@ -126,7 +126,7 @@
 "test.try": "Apa yang dicoba",
 "test.snags": "Kendala umum",
 "test.q1.h": "\"Tidak ditemukan\" atau \"tidak tersedia\"",
-"test.q1.d": "Tepat setelah langkah 2 ini wajar: Google Play bisa butuh beberapa jam. Coba lagi nanti di aplikasi Play Store, bukan di browser. Jika masih tidak muncul, ponsel memakai akun Google yang berbeda dari akun yang bergabung ke grup: di Play Store ketuk foto Anda, beralih ke akun itu, lalu cari lagi. Memulai ulang ponsel sering membuatnya langsung muncul.",
+"test.q1.d": "Tepat setelah langkah 2 ini wajar: Google Play bisa butuh beberapa jam. Buka aplikasi dari tautan di halaman pengujian (selama pengujian aplikasi tidak muncul di pencarian). Jika masih tidak tersedia, ponsel memakai akun Google yang berbeda dari akun yang bergabung ke grup: di Play Store ketuk foto Anda, beralih ke akun itu, lalu buka tautannya lagi. Memulai ulang ponsel sering membuatnya langsung muncul.",
 "test.q2.h": "Saya pakai iPhone",
 "test.q2.d": "Untuk saat ini aplikasi hanya untuk Android.",
 "test.q3.h": "Gratis? Apakah mengumpulkan data?",
@@ -252,5 +252,5 @@
 "acc.h1": "Akses penguji",
 "acc.d": "Untuk penguji yang sudah ada di grup. Buka tautan dengan <b>akun Google yang sama</b> dengan yang Anda pakai di Play Store dan ketuk <b>Menjadi penguji</b>.",
 "acc.b": "Menjadi penguji",
-"acc.after": "Lalu buka <b>aplikasi Play Store</b> dan cari <b>Big Cube Solver</b>. Bisa butuh beberapa jam sampai muncul; memulai ulang ponsel sering membantu."
+"acc.after": "Lalu, di halaman yang terbuka, ketuk <b>download di Google Play</b>. Selama pengujian, aplikasi tidak muncul di pencarian Play Store, hanya lewat tautan itu. Bisa butuh beberapa jam sampai tersedia; memulai ulang ponsel sering membantu."
 }
