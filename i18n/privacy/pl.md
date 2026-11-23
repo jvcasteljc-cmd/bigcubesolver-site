@@ -1,6 +1,6 @@
 # Big Cube Solver — Polityka prywatności
 
-*Data wejścia w życie: 15 listopada 2026 r.*
+*Data wejścia w życie: 23 listopada 2026 r.*
 
 *To jest tłumaczenie; wiążąca jest wersja angielska.*
 
@@ -8,7 +8,7 @@ Big Cube Solver („aplikacja”) jest tworzona przez zespół Big Cube Solver. 
 
 ## Czego aplikacja nie robi
 
-- **Nie wysyła niczego przez internet**: sama aplikacja nigdy nie łączy się z serwerem, więc nic z tego, co robisz w aplikacji, nie opuszcza za jej pośrednictwem twojego telefonu.
+- **Nie wysyła przez internet niczego Twojego**: nie ma naszego serwera, z którym by się łączyła. Jej jedyne połączenia idą przez aplikację Sklep Google Play na Twoim telefonie, aby sprawdzać aktualizacje i, jeśli kupisz rozszerzenie, obsłużyć zakup (zob. niżej).
 - **Nie ma kont, reklam, analityki ani śledzenia**.
 - Nie zbiera twojego imienia, adresu e-mail, lokalizacji, kontaktów ani żadnych identyfikatorów.
 
@@ -27,7 +27,7 @@ Jeśli połączysz smart kostkę Bluetooth, aplikacja poprosi o uprawnienie *Urz
 
 ## Zakupy
 
-Wersja darmowa nie wymaga zakupu. Jeśli kupisz rozszerzenie, płatność w całości obsługuje Google Play zgodnie z polityką prywatności Google; aplikacja dowiaduje się jedynie, czy rozszerzenie zostało kupione. Twórca nie otrzymuje żadnych danych płatniczych.
+Wersja darmowa nie wymaga zakupu. Jeśli kupisz rozszerzenie, płatność w całości obsługuje Google Play zgodnie z polityką prywatności Google; aplikacja dowiaduje się jedynie, czy rozszerzenie zostało kupione. Twórca nie otrzymuje żadnych danych płatniczych. Aplikacja robi to za pomocą biblioteki Play Billing Google; dlatego Android pokazuje dla niej uprawnienia do internetu i płatności Google Play.
 
 ## Aktualizacje
 
@@ -39,7 +39,7 @@ Gdy używasz opcji *Zapisz*, *Udostępnij* lub raportu, który postanowisz zapis
 
 ## Linki do wzorów
 
-Wzór, który udostępniasz, to link (bigcubesolver.com/p?...) zawierający tylko rozmiar wzoru, jego nazwę i ruchy - nic o tobie ani o twoim telefonie. Trafia on przez aplikację, którą wybierzesz do udostępnienia. Otwarcie takiego linku lub strony „Pobierz wzory” odbywa się w twojej przeglądarce; sama aplikacja nie ma dostępu do internetu.
+Wzór, który udostępniasz, to link (bigcubesolver.com/p?...) zawierający tylko rozmiar wzoru, jego nazwę i ruchy - nic o tobie ani o twoim telefonie. Trafia on przez aplikację, którą wybierzesz do udostępnienia. Otwarcie takiego linku lub strony „Pobierz wzory” odbywa się w twojej przeglądarce, nie w aplikacji.
 
 ## Informacje przechowywane na telefonie
 

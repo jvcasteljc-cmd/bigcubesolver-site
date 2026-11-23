@@ -1,6 +1,6 @@
 # Big Cube Solver — Datenschutzerklärung
 
-*Gültig ab: 15. November 2026*
+*Gültig ab: 23. November 2026*
 
 *Dies ist eine Übersetzung; maßgeblich ist die englische Fassung.*
 
@@ -8,7 +8,7 @@ Big Cube Solver („die App“) wird vom Big-Cube-Solver-Team entwickelt. Diese 
 
 ## Was die App nicht tut
 
-- Sie **sendet nichts über das Internet**: Die App selbst verbindet sich nie mit einem Server, also verlässt nichts, was du in der App tust, über sie dein Handy.
+- Sie **sendet nichts von dir über das Internet**: Es gibt keinen Server von uns, mit dem sie spricht. Ihre einzigen Verbindungen laufen über die Google-Play-Store-App auf deinem Handy, um nach Updates zu suchen und, wenn du eine Erweiterung kaufst, den Kauf abzuwickeln (siehe unten).
 - Sie hat **keine Konten, keine Werbung, keine Nutzungsanalyse und kein Tracking**.
 - Sie erhebt weder deinen Namen noch deine E-Mail-Adresse, deinen Standort, deine Kontakte oder irgendeine Kennung.
 
@@ -27,7 +27,7 @@ Wenn du einen Bluetooth-Smart-Cube verbindest, fragt die App nach der Berechtigu
 
 ## Käufe
 
-Die kostenlose Version erfordert keinen Kauf. Wenn du ein Upgrade kaufst, wird die Zahlung vollständig von Google Play nach Googles eigener Datenschutzerklärung abgewickelt; die App erfährt nur, ob das Upgrade gekauft wurde. Der Entwickler erhält keine Zahlungsdaten.
+Die kostenlose Version erfordert keinen Kauf. Wenn du ein Upgrade kaufst, wird die Zahlung vollständig von Google Play nach Googles eigener Datenschutzerklärung abgewickelt; die App erfährt nur, ob das Upgrade gekauft wurde. Der Entwickler erhält keine Zahlungsdaten. Dafür nutzt die App Googles Play-Billing-Bibliothek; deshalb zeigt Android für sie die Berechtigungen für Internet und Google-Play-Abrechnung.
 
 ## Updates
 
@@ -39,7 +39,7 @@ Wenn du *Speichern*, *Teilen* oder einen Bericht verwendest, den du speichern m�
 
 ## Muster-Links
 
-Ein Muster, das du teilst, ist ein Link (bigcubesolver.com/p?...), der nur die Größe des Musters, seinen Namen und seine Züge enthält - nichts über dich oder dein Handy. Er läuft über die App, die du zum Teilen auswählst. Das Öffnen eines solchen Links oder der Seite „Muster holen“ geschieht in deinem Browser; die App selbst hat keinen Internetzugang.
+Ein Muster, das du teilst, ist ein Link (bigcubesolver.com/p?...), der nur die Größe des Musters, seinen Namen und seine Züge enthält - nichts über dich oder dein Handy. Er läuft über die App, die du zum Teilen auswählst. Das Öffnen eines solchen Links oder der Seite „Muster holen“ geschieht in deinem Browser, nicht in der App.
 
 ## Auf deinem Handy gespeicherte Informationen
 

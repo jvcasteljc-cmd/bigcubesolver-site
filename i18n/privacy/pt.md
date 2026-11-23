@@ -1,6 +1,6 @@
 # Big Cube Solver — Política de privacidade
 
-*Data de vigência: 15 de novembro de 2026*
+*Data de vigência: 23 de novembro de 2026*
 
 *Esta é uma tradução; a versão em inglês é a de referência.*
 
@@ -8,7 +8,7 @@ O Big Cube Solver ("o app") é desenvolvido pela equipe do Big Cube Solver. Esta
 
 ## O que o app não faz
 
-- Ele **não envia nada pela internet**: o próprio app nunca se conecta a um servidor, então nada do que você faz no app sai do seu celular por meio dele.
+- Ele **não envia nada seu pela internet**: não existe servidor nosso com o qual ele se comunique. Suas únicas conexões passam pelo app Google Play Store do seu telefone, para procurar atualizações e, se você comprar uma melhoria, para cuidar da compra (veja abaixo).
 - Ele **não tem contas, anúncios, análises de uso nem rastreamento**.
 - Ele não coleta seu nome, e-mail, localização, contatos nem qualquer identificador.
 
@@ -27,7 +27,7 @@ Se você conectar um cubo inteligente Bluetooth, o app pede a permissão *Dispos
 
 ## Compras
 
-A versão grátis não exige compra. Se você comprar um upgrade, o pagamento é processado inteiramente pelo Google Play, sob a política de privacidade do próprio Google; o app só fica sabendo se o upgrade foi comprado. O desenvolvedor não recebe nenhum dado de pagamento.
+A versão grátis não exige compra. Se você comprar um upgrade, o pagamento é processado inteiramente pelo Google Play, sob a política de privacidade do próprio Google; o app só fica sabendo se o upgrade foi comprado. O desenvolvedor não recebe nenhum dado de pagamento. O app faz isso com a biblioteca Play Billing do Google; por isso o Android mostra para ele as permissões de internet e de faturamento do Google Play.
 
 ## Atualizações
 
@@ -39,7 +39,7 @@ Quando você usa *Salvar*, *Compartilhar* ou um relatório que decide salvar (be
 
 ## Links de padrões
 
-Um padrão que você compartilha é um link (bigcubesolver.com/p?...) que contém apenas o tamanho do padrão, o nome e os movimentos - nada sobre você ou o seu celular. Ele passa pelo app que você escolher para compartilhar. Abrir esse link, ou a página "Obter padrões", usa o seu navegador; o próprio app não tem acesso à internet.
+Um padrão que você compartilha é um link (bigcubesolver.com/p?...) que contém apenas o tamanho do padrão, o nome e os movimentos - nada sobre você ou o seu celular. Ele passa pelo app que você escolher para compartilhar. Abrir esse link, ou a página "Obter padrões", usa o seu navegador, não o app.
 
 ## Informações guardadas no seu celular
 

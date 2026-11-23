@@ -1,6 +1,6 @@
 # Big Cube Solver — Kebijakan Privasi
 
-*Tanggal berlaku: 15 November 2026*
+*Tanggal berlaku: 23 November 2026*
 
 *Ini adalah terjemahan; versi bahasa Inggris yang menjadi acuan.*
 
@@ -8,7 +8,7 @@ Big Cube Solver ("aplikasi") dikembangkan oleh tim Big Cube Solver. Kebijakan in
 
 ## Yang tidak dilakukan aplikasi
 
-- Aplikasi **tidak mengirim apa pun lewat internet**: aplikasi itu sendiri tidak pernah terhubung ke server, sehingga tidak ada yang Anda lakukan di aplikasi yang keluar dari ponsel melaluinya.
+- Aplikasi **tidak mengirim data Anda lewat internet**: tidak ada server kami yang dihubunginya. Satu-satunya koneksinya melalui aplikasi Google Play Store di ponsel Anda, untuk memeriksa pembaruan dan, jika Anda membeli peningkatan, untuk memproses pembelian (lihat di bawah).
 - Aplikasi **tidak punya akun, iklan, analitik, maupun pelacakan**.
 - Aplikasi tidak mengumpulkan nama, email, lokasi, kontak, atau pengenal apa pun.
 
@@ -27,7 +27,7 @@ Jika Anda menyambungkan kubus pintar Bluetooth, aplikasi meminta izin *Perangkat
 
 ## Pembelian
 
-Versi gratis tidak memerlukan pembelian. Jika Anda membeli peningkatan, pembayaran sepenuhnya ditangani oleh Google Play berdasarkan kebijakan privasi Google sendiri; aplikasi hanya mengetahui apakah peningkatan sudah dibeli. Pengembang tidak menerima detail pembayaran apa pun.
+Versi gratis tidak memerlukan pembelian. Jika Anda membeli peningkatan, pembayaran sepenuhnya ditangani oleh Google Play berdasarkan kebijakan privasi Google sendiri; aplikasi hanya mengetahui apakah peningkatan sudah dibeli. Pengembang tidak menerima detail pembayaran apa pun. Aplikasi melakukannya dengan pustaka Play Billing dari Google; karena itu Android menampilkan izin internet dan penagihan Google Play untuknya.
 
 ## Pembaruan
 
@@ -39,7 +39,7 @@ Saat Anda memakai *Simpan*, *Bagikan*, atau laporan yang Anda pilih untuk disimp
 
 ## Tautan pola
 
-Pola yang Anda bagikan adalah tautan (bigcubesolver.com/p?...) yang hanya berisi ukuran pola, namanya, dan langkahnya - tidak ada apa pun tentang Anda atau ponsel Anda. Tautan itu dikirim lewat aplikasi yang Anda pilih untuk berbagi. Membuka tautan seperti itu, atau halaman "Dapatkan pola", menggunakan browser Anda; aplikasi itu sendiri tidak punya akses internet.
+Pola yang Anda bagikan adalah tautan (bigcubesolver.com/p?...) yang hanya berisi ukuran pola, namanya, dan langkahnya - tidak ada apa pun tentang Anda atau ponsel Anda. Tautan itu dikirim lewat aplikasi yang Anda pilih untuk berbagi. Membuka tautan seperti itu, atau halaman "Dapatkan pola", menggunakan browser Anda, bukan aplikasi.
 
 ## Informasi yang disimpan di ponsel Anda
 

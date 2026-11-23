@@ -2,7 +2,7 @@
 
 (Published at https://bigcubesolver.com/privacy)
 
-*Effective date: 15 November 2026*
+*Effective date: 23 November 2026*
 
 Big Cube Solver ("the app") is developed by the Big Cube Solver team. This policy
 explains what the app does with your information. The short answer: **the app
@@ -10,8 +10,7 @@ does not collect, store on any server, or share any personal data.**
 
 ## What the app does not do
 
-- It **sends nothing over the internet**: the app itself never connects to a
-  server, so nothing you do in the app leaves your phone through it.
+- It **sends nothing of yours over the internet**: there is no server of ours for it to talk to. Its only connections go through the Google Play Store app on your phone, to check for updates and, if you buy an upgrade, to handle the purchase (see below).
 - It has **no accounts, no advertising, no analytics and no tracking**.
 - It does not collect your name, email, location, contacts or any identifier.
 
@@ -45,7 +44,7 @@ app works as before.
 The free version needs no purchase. If you buy an upgrade, the payment is
 handled entirely by Google Play under Google's own privacy policy; the app
 only learns whether the upgrade is bought. The developer receives no payment
-details.
+details. The app does this with Google's Play Billing library, which is why Android lists the internet and Google Play billing permissions for it.
 
 ## Updates
 
@@ -64,7 +63,7 @@ wherever you decide to share them. The app never sends them anywhere by itself.
 A pattern you share is a link (bigcubesolver.com/p?...) holding only the
 pattern's size, its name and its moves - nothing about you or your phone. It
 goes through the app you pick to share it. Opening such a link, or the
-"Get patterns" page, uses your browser; the app itself has no internet access.
+"Get patterns" page, uses your browser, not the app.
 
 ## Information kept on your phone
 
@@ -108,7 +107,7 @@ Questions about this policy: privacy@bigcubesolver.com
 
 # Big Cube Solver — Política de privacidad
 
-*Fecha de entrada en vigor: 15 de noviembre de 2026*
+*Fecha de entrada en vigor: 23 de noviembre de 2026*
 
 Big Cube Solver ("la app") ha sido desarrollada por Big Cube Solver. Esta
 política explica qué hace la app con tu información. En resumen: **la app no
@@ -116,8 +115,7 @@ recopila datos personales, no los guarda en ningún servidor y no los comparte.*
 
 ## Lo que la app no hace
 
-- **No envía nada por internet**: la app nunca se conecta a ningún servidor,
-  así que nada de lo que haces en ella sale de tu teléfono a través de la app.
+- **No envía nada tuyo por internet**: no hay ningún servidor nuestro con el que hable. Sus únicas conexiones pasan por la app Google Play Store de tu teléfono, para buscar actualizaciones y, si compras una mejora, para gestionar la compra (ver abajo).
 - **No tiene cuentas, publicidad, analíticas ni seguimiento.**
 - No recopila tu nombre, correo, ubicación, contactos ni ningún identificador.
 
@@ -152,7 +150,7 @@ resto de la app funciona igual.
 La versión gratuita no necesita ninguna compra. Si compras una mejora, el pago
 lo gestiona por completo Google Play, bajo su propia política de privacidad; la
 app solo sabe si la mejora está comprada. El desarrollador no recibe ningún
-dato de pago.
+dato de pago. La app lo hace con la biblioteca Play Billing de Google; por eso Android le muestra los permisos de internet y de facturación de Google Play.
 
 ## Actualizaciones
 
@@ -172,8 +170,7 @@ envía a ningún sitio por sí misma.
 Un patrón que compartes es un enlace (bigcubesolver.com/p?...) que solo
 contiene el tamaño del patrón, su nombre y sus movimientos: nada sobre ti ni tu
 teléfono. Se envía con la app que eliges para compartirlo. Abrir un enlace así,
-o la página "Obtener patrones", usa tu navegador; la app no tiene acceso a
-internet.
+o la página "Obtener patrones", usa tu navegador, no la app.
 
 ## Información guardada en tu teléfono
 

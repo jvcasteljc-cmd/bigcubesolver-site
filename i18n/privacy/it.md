@@ -1,6 +1,6 @@
 # Big Cube Solver — Informativa sulla privacy
 
-*Data di entrata in vigore: 15 novembre 2026*
+*Data di entrata in vigore: 23 novembre 2026*
 
 *Questa è una traduzione; fa fede la versione in inglese.*
 
@@ -8,7 +8,7 @@ Big Cube Solver ("l'app") è sviluppata dal team di Big Cube Solver. Questa info
 
 ## Cosa l'app non fa
 
-- **Non invia nulla tramite internet**: l'app stessa non si collega mai a un server, quindi nulla di ciò che fai nell'app lascia il telefono attraverso di essa.
+- **Non invia nulla di tuo tramite internet**: non esiste un nostro server con cui comunichi. Le sue uniche connessioni passano dall'app Google Play Store del telefono, per cercare aggiornamenti e, se acquisti un potenziamento, per gestire l'acquisto (vedi sotto).
 - **Non ha account, pubblicità, statistiche d'uso né tracciamento**.
 - Non raccoglie il tuo nome, la tua email, la tua posizione, i tuoi contatti né alcun identificativo.
 
@@ -27,7 +27,7 @@ Se colleghi uno smart cube Bluetooth, l'app chiede il permesso *Dispositivi nell
 
 ## Acquisti
 
-La versione gratuita non richiede acquisti. Se acquisti un aggiornamento, il pagamento è gestito interamente da Google Play secondo l'informativa sulla privacy di Google; l'app sa soltanto se l'aggiornamento è stato acquistato. Lo sviluppatore non riceve alcun dato di pagamento.
+La versione gratuita non richiede acquisti. Se acquisti un aggiornamento, il pagamento è gestito interamente da Google Play secondo l'informativa sulla privacy di Google; l'app sa soltanto se l'aggiornamento è stato acquistato. Lo sviluppatore non riceve alcun dato di pagamento. L'app lo fa con la libreria Play Billing di Google; per questo Android le mostra i permessi di internet e di fatturazione Google Play.
 
 ## Aggiornamenti
 
@@ -39,7 +39,7 @@ Quando usi *Salva*, *Condividi* o un rapporto che scegli di salvare (benchmark, 
 
 ## Link ai motivi
 
-Un motivo che condividi è un link (bigcubesolver.com/p?...) che contiene solo la dimensione del motivo, il suo nome e le sue mosse - niente su di te o sul tuo telefono. Passa attraverso l'app che scegli per condividerlo. Aprire un link del genere, o la pagina "Scarica motivi", usa il tuo browser; l'app stessa non ha accesso a internet.
+Un motivo che condividi è un link (bigcubesolver.com/p?...) che contiene solo la dimensione del motivo, il suo nome e le sue mosse - niente su di te o sul tuo telefono. Passa attraverso l'app che scegli per condividerlo. Aprire un link del genere, o la pagina "Scarica motivi", usa il tuo browser, non l'app.
 
 ## Informazioni conservate sul telefono
 

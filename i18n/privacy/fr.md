@@ -1,6 +1,6 @@
 # Big Cube Solver — Politique de confidentialité
 
-*Date d'entrée en vigueur : 15 novembre 2026*
+*Date d'entrée en vigueur : 23 novembre 2026*
 
 *Ceci est une traduction ; la version anglaise fait foi.*
 
@@ -8,7 +8,7 @@ Big Cube Solver (« l'appli ») est développée par l'équipe Big Cube Solver. 
 
 ## Ce que l'appli ne fait pas
 
-- Elle **n'envoie rien sur internet** : l'appli elle-même ne se connecte jamais à un serveur, donc rien de ce que vous faites dans l'appli ne quitte votre téléphone par son intermédiaire.
+- Elle **n'envoie rien qui vous concerne sur internet** : il n'existe aucun serveur à nous avec lequel elle communique. Ses seules connexions passent par l'application Google Play Store de votre téléphone, pour vérifier les mises à jour et, si vous achetez une amélioration, pour gérer l'achat (voir plus bas).
 - Elle n'a **ni compte, ni publicité, ni statistiques d'usage, ni pistage**.
 - Elle ne collecte ni votre nom, ni votre e-mail, ni votre position, ni vos contacts, ni aucun identifiant.
 
@@ -27,7 +27,7 @@ Si vous connectez un cube connecté Bluetooth, l'appli demande l'autorisation *A
 
 ## Achats
 
-La version gratuite ne nécessite aucun achat. Si vous achetez une mise à niveau, le paiement est entièrement géré par Google Play selon la politique de confidentialité de Google ; l'appli apprend seulement si la mise à niveau a été achetée. Le développeur ne reçoit aucune donnée de paiement.
+La version gratuite ne nécessite aucun achat. Si vous achetez une mise à niveau, le paiement est entièrement géré par Google Play selon la politique de confidentialité de Google ; l'appli apprend seulement si la mise à niveau a été achetée. Le développeur ne reçoit aucune donnée de paiement. L'application le fait avec la bibliothèque Play Billing de Google ; c'est pourquoi Android lui affiche les autorisations internet et facturation Google Play.
 
 ## Mises à jour
 
@@ -39,7 +39,7 @@ Lorsque vous utilisez *Enregistrer*, *Partager* ou un rapport que vous choisisse
 
 ## Liens de motifs
 
-Un motif que vous partagez est un lien (bigcubesolver.com/p?...) qui ne contient que la taille du motif, son nom et ses mouvements - rien sur vous ni sur votre téléphone. Il passe par l'appli que vous choisissez pour le partager. Ouvrir un tel lien, ou la page « Obtenir des motifs », utilise votre navigateur ; l'appli elle-même n'a pas accès à internet.
+Un motif que vous partagez est un lien (bigcubesolver.com/p?...) qui ne contient que la taille du motif, son nom et ses mouvements - rien sur vous ni sur votre téléphone. Il passe par l'appli que vous choisissez pour le partager. Ouvrir un tel lien, ou la page « Obtenir des motifs », utilise votre navigateur, pas l'appli.
 
 ## Informations conservées sur votre téléphone
 

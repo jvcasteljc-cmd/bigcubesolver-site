@@ -1,6 +1,6 @@
 # Big Cube Solver — Gizlilik Politikası
 
-*Yürürlük tarihi: 15 Kasım 2026*
+*Yürürlük tarihi: 23 Kasım 2026*
 
 *Bu bir çeviridir; esas alınan metin İngilizce sürümdür.*
 
@@ -8,7 +8,7 @@ Big Cube Solver ("uygulama"), Big Cube Solver ekibi tarafından geliştirilmekte
 
 ## Uygulamanın yapmadıkları
 
-- **İnternet üzerinden hiçbir şey göndermez**: uygulamanın kendisi hiçbir zaman bir sunucuya bağlanmaz, bu yüzden uygulamada yaptığınız hiçbir şey onun aracılığıyla telefonunuzdan çıkmaz.
+- **Sana ait hiçbir şeyi internet üzerinden göndermez**: bağlandığı bir sunucumuz yoktur. Tek bağlantıları, telefonundaki Google Play Store uygulaması üzerinden güncellemeleri denetlemek ve bir yükseltme satın alırsan satın almayı yürütmek içindir (aşağıya bak).
 - **Hesap, reklam, analiz ya da izleme yoktur**.
 - Adınızı, e-postanızı, konumunuzu, kişilerinizi ya da herhangi bir tanımlayıcıyı toplamaz.
 
@@ -27,7 +27,7 @@ Bir Bluetooth akıllı küp bağlarsanız uygulama *Yakındaki cihazlar* iznini 
 
 ## Satın almalar
 
-Ücretsiz sürüm satın alma gerektirmez. Bir yükseltme satın alırsanız ödeme tamamen Google Play tarafından, Google'ın kendi gizlilik politikasına göre işlenir; uygulama yalnızca yükseltmenin satın alınıp alınmadığını öğrenir. Geliştirici hiçbir ödeme bilgisi almaz.
+Ücretsiz sürüm satın alma gerektirmez. Bir yükseltme satın alırsanız ödeme tamamen Google Play tarafından, Google'ın kendi gizlilik politikasına göre işlenir; uygulama yalnızca yükseltmenin satın alınıp alınmadığını öğrenir. Geliştirici hiçbir ödeme bilgisi almaz. Uygulama bunu Google'ın Play Billing kitaplığıyla yapar; bu yüzden Android onun için internet ve Google Play faturalandırma izinlerini gösterir.
 
 ## Güncellemeler
 
@@ -39,7 +39,7 @@ Güncelleme sunabilmek için uygulama, telefonundaki Google Play Store uygulamas
 
 ## Desen bağlantıları
 
-Paylaştığınız bir desen, yalnızca desenin boyutunu, adını ve hamlelerini içeren bir bağlantıdır (bigcubesolver.com/p?...) - sizin ya da telefonunuz hakkında hiçbir şey içermez. Paylaşmak için seçtiğiniz uygulama üzerinden gider. Böyle bir bağlantıyı ya da "Desen al" sayfasını açmak tarayıcınızı kullanır; uygulamanın kendisinin internet erişimi yoktur.
+Paylaştığınız bir desen, yalnızca desenin boyutunu, adını ve hamlelerini içeren bir bağlantıdır (bigcubesolver.com/p?...) - sizin ya da telefonunuz hakkında hiçbir şey içermez. Paylaşmak için seçtiğiniz uygulama üzerinden gider. Böyle bir bağlantıyı ya da "Desen al" sayfasını açmak uygulamayı değil, tarayıcınızı kullanır.
 
 ## Telefonunuzda tutulan bilgiler
 
